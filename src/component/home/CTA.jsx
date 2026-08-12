@@ -3,6 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FiArrowRight } from 'react-icons/fi';
+import Link from 'next/link';
 
 function WhyChooseUsCTA() {
   // Animation Variants
@@ -90,6 +91,7 @@ function WhyChooseUsCTA() {
           </motion.p>
 
           {/* Rounded Pill CTA Button */}
+          <Link href="/contact">
           <motion.div variants={fadeInUp} className="pt-4">
             <motion.button 
               whileHover={{ scale: 1.05 }}
@@ -101,7 +103,7 @@ function WhyChooseUsCTA() {
               <FiArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300 ease-out" />
             </motion.button>
           </motion.div>
-
+          </Link>
         </motion.div>
       </motion.div>
     </section>

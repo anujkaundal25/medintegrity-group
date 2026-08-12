@@ -8,26 +8,18 @@ import {
 import { FaPhone } from "react-icons/fa6";
 
 export default function FloatingWidgets() {
-  const [showScrollTop, setShowScrollTop] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setShowScrollTop(window.scrollY > 300);
-    };
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       setShowScrollTop(window.scrollY > 300);
+//     };
 
-    window.addEventListener("scroll", handleScroll);
+//     window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
+//     return () => {
+//       window.removeEventListener("scroll", handleScroll);
+//     };
+//   }, []);
 
   return (
     <>
@@ -36,7 +28,7 @@ export default function FloatingWidgets() {
         
         {/* WhatsApp Edge-Attached Widget */}
         <a
-          href="https://wa.me/YOUR_PHONE_NUMBER"
+          href="#"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="WhatsApp Chat"
@@ -85,7 +77,7 @@ export default function FloatingWidgets() {
 
         {/* Call / Phone Edge-Attached Widget */}
         <a
-          href="tel:YOUR_PHONE_NUMBER"
+          href="#"
           aria-label="Call Now"
           className="
             pointer-events-auto
@@ -130,38 +122,6 @@ export default function FloatingWidgets() {
           </span>
         </a>
       </div>
-
-      {/* Scroll To Top Button - Positioned Separately at Bottom-Left */}
-      {showScrollTop && (
-        <button
-          type="button"
-          onClick={scrollToTop}
-          aria-label="Scroll to top"
-          className="
-            fixed
-            bottom-6
-            right-10
-            z-50
-            flex
-            items-center
-            justify-center
-            w-11
-            h-11
-            bg-[#0d2e5c]
-            hover:bg-[#009a97]
-            text-white
-            rounded-full
-            shadow-lg
-            hover:scale-110
-            transition-all
-            duration-300
-            ease-in-out
-            cursor-pointer
-          "
-        >
-          <FaChevronUp className="w-5 h-5" />
-        </button>
-      )}
     </>
   );
 }

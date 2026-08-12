@@ -26,8 +26,8 @@ function Header() {
 
   return (
     <header className="w-full font-sans">
-      {/* 1. Top Bar */}
-      <div className="bg-[#053263] text-white text-xs sm:text-sm py-2 px-4 md:px-12 relative z-50">
+      {/* 1. Top Bar (Scrolls away normally) */}
+      <div className="bg-[#053263] text-white text-xs sm:text-sm py-2 px-4 md:px-12 relative z-40">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
           
           {/* Contact Details */}
@@ -61,8 +61,8 @@ function Header() {
         </div>
       </div>
 
-      {/* 2. Unique Glassmorphic Fixed Navigation Bar */}
-      <div className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200/80 shadow-sm px-4 md:px-12 transition-all duration-300">
+      {/* 2. Lower Navigation Bar (Fixed / Sticky at the top when scrolling) */}
+      <div className="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200/80 shadow-sm px-4 md:px-12 transition-all duration-300">
         <div className="max-w-7xl mx-auto flex items-center justify-between h-20">
           
           {/* Logo Section */}
@@ -92,7 +92,7 @@ function Header() {
           {/* Right Section: Unique White CTA Button */}
           <div className="hidden lg:flex items-center shrink-0">
             <a 
-              href="#contact" 
+              href="/contact" 
               className="group flex items-center gap-2 bg-[#0d2e5c] hover:bg-[#019a9a] text-white font-bold text-xs uppercase px-6 py-3 rounded-full transition-all duration-300 shadow-md hover:shadow-cyan-500/20 tracking-wider cursor-pointer transform hover:-translate-y-0.5"
             >
               <span>Contact Us</span>
