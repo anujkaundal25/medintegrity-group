@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/component/ui/Header";
 import Footer from "@/component/ui/Footer";
+import FloatingIcons from "@/component/home/FloatingIcons";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-full flex flex-col">
         <Header/>
+        <FloatingIcons/>
         {children}
         <Footer/>
         </body>
