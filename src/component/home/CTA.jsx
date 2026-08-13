@@ -85,7 +85,7 @@ function WhyChooseUsCTA() {
             {/* Main Title */}
             <motion.h2 
               variants={fadeInUp}
-              className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight leading-tight max-w-3xl mx-auto text-balance"
+              className="text-3xl sm:text-4xl font-bold text-white leading-tight"
             >
               Quality Should Never Be Assumed. <br className="hidden sm:block" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-teal-200 to-white">

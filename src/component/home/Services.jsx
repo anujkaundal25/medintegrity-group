@@ -90,7 +90,7 @@ function Services() {
           <span className="text-xs sm:text-sm font-semibold tracking-widest text-[#009a97] uppercase inline-block">
             Our Services
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-tight">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white leading-tight">
             Explore Our Wide Range Of Medical Equipment Services
           </h2>
         </motion.div>

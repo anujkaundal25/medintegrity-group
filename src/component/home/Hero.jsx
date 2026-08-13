@@ -162,25 +162,6 @@ function Hero() {
           </button>
         </div>
 
-        {/* Mobile Navigation Buttons (Visible only on mobile/tablet via 'flex lg:hidden', positioned at the right bottom side) */}
-        <div className="absolute bottom-28 right-38 flex lg:hidden items-center gap-3 z-40 pointer-events-auto">
-          <button
-            onClick={prevSlide}
-            type="button"
-            className="w-10 h-10 rounded-full bg-slate-900/80 hover:bg-[#009a97] text-white flex items-center justify-center transition-colors duration-300 border border-white/20 shadow-xl cursor-pointer"
-            aria-label="Previous Slide"
-          >
-            <FiChevronLeft className="w-5 h-5" />
-          </button>
-          <button
-            onClick={nextSlide}
-            type="button"
-            className="w-10 h-10 rounded-full bg-slate-900/80 hover:bg-[#009a97] text-white flex items-center justify-center transition-colors duration-300 border border-white/20 shadow-xl cursor-pointer"
-            aria-label="Next Slide"
-          >
-            <FiChevronRight className="w-5 h-5" />
-          </button>
-        </div>
 
         {/* Corrected Slanted Bottom Cutout Accent (Lower Left, Higher Right) */}
         <div

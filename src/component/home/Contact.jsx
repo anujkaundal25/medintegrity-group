@@ -75,7 +75,7 @@ function Contact() {
               Independent Medical Equipment Verification &amp; Procurement Assurance
             </span>
 
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white leading-tight">
               Protecting Healthcare Investments <br />
               Through Independent Verification
             </h2>

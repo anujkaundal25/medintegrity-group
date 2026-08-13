@@ -82,7 +82,7 @@ function FAQSection() {
         <span className="text-xs sm:text-sm font-semibold tracking-widest text-[#009a97] uppercase inline-block">
           Independence. Experience. Accountability.
         </span>
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0a1045] leading-tight">
+        <h2 className="text-3xl sm:text-4xl font-bold text-[#1c226b] leading-tight">
           Independent Medical Equipment Verification
         </h2>
         <p className="text-sm sm:text-base text-slate-600 max-w-xl mx-auto">
@@ -106,7 +106,7 @@ function FAQSection() {
               <span className="text-xs font-semibold tracking-wider text-[#009a97] uppercase">
                 Why MedIntegrity Group?
               </span>
-              <h3 className="text-2xl sm:text-3xl font-bold text-[#0a1045] leading-tight">
+              <h3 className="text-3xl sm:text-4xl font-bold text-[#1c226b] leading-tight">
                 Frequently Asked Questions <br className="hidden sm:block" />
                 From Healthcare Clients
               </h3>

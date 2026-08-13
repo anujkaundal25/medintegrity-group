@@ -82,7 +82,7 @@ function Process() {
           <span className="text-xs sm:text-sm font-semibold tracking-widest text-[#009a97] uppercase inline-block">
             How We Work
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1c226b] leading-tight">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#1c226b] leading-tight">
             Our Process
           </h2>
         </motion.div>

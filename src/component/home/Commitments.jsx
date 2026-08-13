@@ -88,7 +88,7 @@ function Commitments() {
           <span className="text-xs sm:text-sm font-semibold tracking-widest text-[#00a3d9] uppercase inline-block">
             Core Values
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1c226b] leading-tight">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#1c226b] leading-tight">
             Why Healthcare Trusts MedIntegrity
           </h2>
         </motion.div>

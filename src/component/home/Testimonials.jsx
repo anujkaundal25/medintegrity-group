@@ -96,7 +96,7 @@ function Testimonials() {
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#009a97]/10 text-[#009a97] font-bold text-xs uppercase tracking-wider mb-3">
               Client Success Stories
             </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0d2e5c] leading-[1.15]">
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#1c226b] leading-tight">
               Realizing Dreams: Success Stories From Our Clients
             </h2>
             <p className="text-slate-600 mt-4 text-base sm:text-lg leading-relaxed">
