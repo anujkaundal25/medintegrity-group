@@ -26,7 +26,7 @@ function Services() {
       description:
         "Independent inspection before equipment leaves the manufacturer, helping identify discrepancies, defects, missing components, or deviations from approved specifications.",
       image:
-        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=600",
+        "https://www.china-quality-inspection.com/wp-content/uploads/2025/05/inspector-conducting-pre-shipment-inspection-in-a-chinese-factory.jpg",
       link: "#pre-shipment-inspection",
     },
   ];
@@ -62,7 +62,7 @@ function Services() {
   };
 
   return (
-    <section className="relative w-full bg-[#f4f8fa] overflow-hidden pb-24">
+    <section className="relative w-full bg-[#f4f8fa] overflow-hidden pb-5">
       {/* Dark Blue Header Section with Slanted Top & Bottom */}
       <div
         className="relative w-full bg-[#0a1045] text-white pt-24 pb-52 px-6"
@@ -87,7 +87,7 @@ function Services() {
           viewport={{ once: true, margin: "-80px" }}
           variants={fadeInUp}
         >
-          <span className="text-xs sm:text-sm font-semibold tracking-widest text-[#00a3d9] uppercase inline-block">
+          <span className="text-xs sm:text-sm font-semibold tracking-widest text-[#009a97] uppercase inline-block">
             Our Services
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-tight">
@@ -97,7 +97,7 @@ function Services() {
       </div>
 
       {/* Cards Section */}
-      <div className="relative max-w-7xl mx-auto px-6 -mt-40 z-20">
+      <div className="relative max-w-7xl mx-auto px-6 -mt-40 z-20 pb-0">
         <motion.div 
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           initial="hidden"
@@ -135,7 +135,7 @@ function Services() {
                 {/* Learn More Link */}
                 <a
                   href={service.link}
-                  className="inline-flex items-center gap-1.5 text-xs font-bold text-[#1c226b] group-hover:text-[#00a3d9] uppercase tracking-wider transition-colors mt-auto"
+                  className="inline-flex items-center gap-1.5 text-xs font-bold text-[#1c226b] group-hover:text-[#009a97] uppercase tracking-wider transition-colors mt-auto"
                 >
                   Learn More
                   <span className="text-sm transition-transform duration-300 group-hover:translate-x-1">
@@ -159,7 +159,7 @@ function Services() {
         <motion.button 
           whileHover={{ scale: 1.04 }}
           whileTap={{ scale: 0.96 }}
-          className="bg-[#0a1045] hover:bg-[#00a3d9] text-white font-bold text-sm tracking-wider uppercase py-3.5 px-10 rounded-xl cursor-pointer transition-colors shadow-lg"
+          className="bg-[#0a1045] hover:bg-[#009a97] text-white font-bold text-sm tracking-wider uppercase py-3.5 px-10 rounded-xl cursor-pointer transition-colors shadow-lg"
         >
           View All Services
         </motion.button>

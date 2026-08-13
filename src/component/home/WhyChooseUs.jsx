@@ -53,7 +53,7 @@ function WhyChooseUs() {
   };
 
   return (
-    <section className="relative w-full py-20 bg-white text-slate-800 overflow-hidden">
+    <section className="relative w-full py-10 bg-white text-slate-800 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 space-y-12">
         
         {/* Full-width, height-reduced Banner Image */}
@@ -82,7 +82,7 @@ function WhyChooseUs() {
             viewport={{ once: true, margin: "-80px" }}
             variants={fadeInLeft}
           >
-            <span className="text-xs sm:text-sm font-semibold tracking-wider text-[#00a3d9] uppercase inline-block">
+            <span className="text-xs sm:text-sm font-semibold tracking-wider text-[#009a97] uppercase inline-block">
               Why Choose Us
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1c226b] leading-tight">

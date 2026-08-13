@@ -69,7 +69,7 @@ function FAQSection() {
   };
 
   return (
-    <section className="relative w-full bg-[#f4f8fb] pt-16 pb-24 overflow-hidden font-sans">
+    <section className="relative w-full bg-[#f4f8fb] pb-10 overflow-hidden font-sans">
       
       {/* Outer Section Header */}
       <motion.div 
@@ -79,10 +79,10 @@ function FAQSection() {
         viewport={{ once: true, margin: "-80px" }}
         variants={fadeInUp}
       >
-        <span className="text-xs sm:text-sm font-semibold tracking-widest text-[#00a3d9] uppercase inline-block">
+        <span className="text-xs sm:text-sm font-semibold tracking-widest text-[#009a97] uppercase inline-block">
           Independence. Experience. Accountability.
         </span>
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0d2e5c] leading-tight">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0a1045] leading-tight">
           Independent Medical Equipment Verification
         </h2>
         <p className="text-sm sm:text-base text-slate-600 max-w-xl mx-auto">
@@ -103,10 +103,10 @@ function FAQSection() {
           {/* FAQ Card Sub-Header */}
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-end mb-10 pb-6 border-b border-slate-100">
             <div className="md:col-span-7 space-y-2">
-              <span className="text-xs font-semibold tracking-wider text-[#00a3d9] uppercase">
+              <span className="text-xs font-semibold tracking-wider text-[#009a97] uppercase">
                 Why MedIntegrity Group?
               </span>
-              <h3 className="text-2xl sm:text-3xl font-extrabold text-[#0d2e5c] leading-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-[#0a1045] leading-tight">
                 Frequently Asked Questions <br className="hidden sm:block" />
                 From Healthcare Clients
               </h3>
@@ -132,8 +132,8 @@ function FAQSection() {
                       onClick={() => toggleFAQ(item.id)}
                       className={`w-full flex items-center justify-between p-4 px-6 rounded-full text-left font-semibold text-sm transition-all duration-700 ease-in-out cursor-pointer ${
                         isOpen
-                          ? "bg-[#00a3d9] text-white shadow-md"
-                          : "bg-[#f4f8fb] text-[#0d2e5c] hover:bg-slate-200"
+                          ? "bg-[#009a97] text-white shadow-md"
+                          : "bg-[#f4f8fb] text-[#0a1045] hover:bg-slate-200"
                       }`}
                     >
                       <span className="pr-2">{item.question}</span>
@@ -176,8 +176,8 @@ function FAQSection() {
                       onClick={() => toggleFAQ(item.id)}
                       className={`w-full flex items-center justify-between p-4 px-6 rounded-full text-left font-semibold text-sm transition-all duration-700 ease-in-out cursor-pointer ${
                         isOpen
-                          ? "bg-[#00a3d9] text-white shadow-md"
-                          : "bg-[#f4f8fb] text-[#0d2e5c] hover:bg-slate-200"
+                          ? "bg-[#009a97] text-white shadow-md"
+                          : "bg-[#f4f8fb] text-[#0a1045] hover:bg-slate-200"
                       }`}
                     >
                       <span className="pr-2">{item.question}</span>

@@ -1,16 +1,39 @@
 "use client";
 
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import {
   FiArrowRight,
   FiMapPin,
   FiGlobe,
   FiHelpCircle,
   FiSend,
+  FiChevronDown,
 } from "react-icons/fi";
 
 export default function AboutPage() {
+  // State for the accordion in the commitment section
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const toggleAccordion = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
+
+  const commitmentQuestions = [
+    {
+      question: "Did we receive what we ordered?",
+      answer: "We verify equipment upon delivery, checking model, configuration, quantity, accessories, documentation, and other contractual requirements before final acceptance."
+    },
+    {
+      question: "Does it meet the required specifications and standards?",
+      answer: "We review technical documentation, certificates, specifications, manuals, configurations, and conduct independent verification against approved specifications and technical requirements."
+    },
+    {
+      question: "Are we getting what we paid for?",
+      answer: "Our objective is to provide impartial technical information that helps healthcare institutions understand exactly what they are purchasing, what they receive, and whether the two correspond."
+    },
+  ];
+
   // Animation Variants
   const fadeInUp = {
     hidden: { opacity: 0, y: 30 },
@@ -43,7 +66,7 @@ export default function AboutPage() {
         </div>
 
         {/* Ambient Gradient Glows */}
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-[#00a3d9]/20 blur-[120px] rounded-full pointer-events-none" />
+        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-[#009a97]/20 blur-[120px] rounded-full pointer-events-none" />
 
         <motion.div
           className="relative max-w-5xl mx-auto text-center space-y-8 z-10"
@@ -52,7 +75,7 @@ export default function AboutPage() {
           variants={staggerContainer}
         >
           <motion.div variants={fadeInUp}>
-            <span className="inline-block bg-[#00a3d9]/15 border border-[#00a3d9]/30 text-[#00a3d9] text-xs sm:text-sm font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full mb-4">
+            <span className="inline-block bg-white border border-[#009a97]/30 text-[#009a97] text-xs sm:text-sm font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full mb-4">
               MedIntegrity Group
             </span>
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight tracking-tight">
@@ -83,13 +106,13 @@ export default function AboutPage() {
             variants={fadeInUp}
             className="flex flex-wrap justify-center gap-3 pt-2"
           >
-            <span className="bg-[#00a3d9]/10 border border-[#00a3d9]/30 text-[#00a3d9] text-xs font-bold tracking-wider uppercase px-4 py-1.5 rounded-full">
+            <span className="bg-[#009a97]/10 border border-[#009a97]/30 text-[#009a97] text-xs font-bold tracking-wider uppercase px-4 py-1.5 rounded-full">
               Independent
             </span>
-            <span className="bg-[#00a3d9]/10 border border-[#00a3d9]/30 text-[#00a3d9] text-xs font-bold tracking-wider uppercase px-4 py-1.5 rounded-full">
+            <span className="bg-[#009a97]/10 border border-[#009a97]/30 text-[#009a97] text-xs font-bold tracking-wider uppercase px-4 py-1.5 rounded-full">
               Experienced
             </span>
-            <span className="bg-[#00a3d9]/10 border border-[#00a3d9]/30 text-[#00a3d9] text-xs font-bold tracking-wider uppercase px-4 py-1.5 rounded-full">
+            <span className="bg-[#009a97]/10 border border-[#009a97]/30 text-[#009a97] text-xs font-bold tracking-wider uppercase px-4 py-1.5 rounded-full">
               Accountable
             </span>
           </motion.div>
@@ -98,7 +121,7 @@ export default function AboutPage() {
           <motion.div variants={fadeInUp} className="pt-4">
             <a
               href="#contact"
-              className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[#00a3d9] hover:bg-[#0082ae] text-white font-bold text-sm tracking-wide shadow-lg shadow-[#00a3d9]/30 transition-all transform hover:-translate-y-0.5 cursor-pointer"
+              className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[#009a97] hover:bg-[#00827f] text-white font-bold text-sm tracking-wide shadow-lg shadow-[#009a97]/30 transition-all transform hover:-translate-y-0.5 cursor-pointer"
             >
               <span>Request a Consultation</span>
               <FiArrowRight className="w-4 h-4" />
@@ -117,7 +140,7 @@ export default function AboutPage() {
           variants={fadeInUp}
         >
           <div className="lg:col-span-7 space-y-6">
-            <span className="text-xs font-bold tracking-widest text-[#00a3d9] uppercase">
+            <span className="text-xs font-bold tracking-widest text-[#009a97] uppercase">
               The Value of Oversight
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0d2e5c] leading-tight">
@@ -141,8 +164,8 @@ export default function AboutPage() {
               Independent. Experienced. Accountable.
             </p>
 
-            <div className="p-6 rounded-2xl bg-[#f4f8fb] border-l-4 border-[#00a3d9] space-y-2 mt-4">
-              <span className="text-xs font-semibold text-[#00a3d9] uppercase tracking-wider">
+            <div className="p-6 rounded-2xl bg-[#f4f8fb] border-l-4 border-[#009a97] space-y-2 mt-4">
+              <span className="text-xs font-semibold text-[#009a97] uppercase tracking-wider">
                 Our Core Principle
               </span>
               <p className="text-lg font-bold text-[#0d2e5c]">
@@ -163,7 +186,7 @@ export default function AboutPage() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0d2e5c]/80 via-transparent to-transparent" />
             <div className="absolute bottom-6 left-6 right-6 text-white p-4 rounded-xl bg-white/10 backdrop-blur-md border border-white/20">
-              <p className="text-xs font-bold tracking-wider text-[#00a3d9] uppercase">
+              <p className="text-xs font-bold tracking-wider text-[#009a97] uppercase">
                 Buyer-Side Advisory
               </p>
               <p className="text-xs text-slate-200 mt-1">
@@ -185,7 +208,7 @@ export default function AboutPage() {
             viewport={{ once: true, margin: "-80px" }}
             variants={fadeInUp}
           >
-            <span className="text-xs font-bold tracking-widest text-[#00a3d9] uppercase">
+            <span className="text-xs font-bold tracking-widest text-[#009a97] uppercase">
               Executive Leadership
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0d2e5c]">
@@ -210,7 +233,7 @@ export default function AboutPage() {
               <div className="absolute inset-0 bg-gradient-to-t from-[#0d2e5c]/80 via-transparent to-transparent lg:hidden" />
               <div className="absolute bottom-6 left-6 right-6 lg:hidden text-white">
                 <h3 className="text-2xl font-bold">Anders Nilsen</h3>
-                <p className="text-xs text-[#00a3d9]">
+                <p className="text-xs text-[#009a97]">
                   Chief Executive Officer
                 </p>
               </div>
@@ -222,7 +245,7 @@ export default function AboutPage() {
                 <h3 className="text-3xl font-extrabold text-[#0d2e5c]">
                   Anders Nilsen
                 </h3>
-                <p className="text-xs font-semibold text-[#00a3d9] uppercase tracking-wider">
+                <p className="text-xs font-semibold text-[#009a97] uppercase tracking-wider">
                   Chief Executive Officer
                 </p>
               </div>
@@ -279,7 +302,97 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* COMMITMENT & CORE QUESTIONS */}
+      {/* INTERNATIONAL FOCUS & INDEPENDENCE MATTERS */}
+      <section className="py-20 bg-[#0d2e5c] text-white px-4 sm:px-8 lg:px-16 relative overflow-hidden">
+        {/* Section-wide Background Image and Overlay */}
+        <div className="absolute inset-0 pointer-events-none">
+          <img
+            src="/home/cta.webp"
+            alt="Global Network Background"
+            className="w-full h-full object-cover opacity-25"
+          />
+        </div>
+
+        <div className="absolute top-0 right-0 w-96 h-96 bg-[#009a97]/50 rounded-full blur-3xl pointer-events-none" />
+
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 relative z-10">
+          {/* International Focus */}
+          <motion.div
+            className="bg-white rounded-3xl p-8 sm:p-10 border border-slate-100 space-y-6 flex flex-col justify-between shadow-2xl text-slate-800"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-80px" }}
+            variants={fadeInUp}
+          >
+            <div className="space-y-4">
+              <span className="text-xs font-bold tracking-widest text-[#009a97] uppercase">
+                Global Network
+              </span>
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0d2e5c]">
+                Our International Focus
+              </h2>
+              <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                Singapore provides MedIntegrity Group with a strategic base for
+                international medical-technology and healthcare activities.
+              </p>
+
+              <div className="pt-2 space-y-3">
+                <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider">
+                  Initial Markets Served:
+                </p>
+                <div className="flex flex-wrap gap-3">
+                  <div className="flex items-center gap-2 bg-[#f4f8fb] px-4 py-2 rounded-xl text-xs font-bold text-[#0d2e5c] border border-slate-200">
+                    <FiGlobe className="text-[#009a97]" /> Europe
+                  </div>
+                  <div className="flex items-center gap-2 bg-[#f4f8fb] px-4 py-2 rounded-xl text-xs font-bold text-[#0d2e5c] border border-slate-200">
+                    <FiGlobe className="text-[#009a97]" /> North America
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p className="text-xs text-slate-500 italic pt-4 border-t border-slate-100">
+              As the organization develops, MedIntegrity Group intends to expand
+              its international network of technical specialists and inspection
+              capabilities.
+            </p>
+          </motion.div>
+
+          {/* Independence Matters */}
+          <motion.div
+            className="bg-white rounded-3xl p-8 sm:p-10 border border-slate-100 space-y-6 flex flex-col justify-between shadow-2xl text-slate-800"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-80px" }}
+            variants={fadeInUp}
+          >
+            <div className="space-y-4">
+              <span className="text-xs font-bold tracking-widest text-[#009a97] uppercase">
+                Impartial Advice
+              </span>
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0d2e5c]">
+                Independence Matters
+              </h2>
+              <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                MedIntegrity Group is designed to operate strictly from the
+                perspective of the purchaser. We do not exist to promote a
+                particular medical-equipment manufacturer or product.
+              </p>
+              <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                Our objective is to provide impartial technical information that
+                helps healthcare institutions understand exactly what they are
+                purchasing, what they receive, and whether the two correspond.
+              </p>
+            </div>
+
+            <div className="p-4 rounded-xl bg-[#009a97]/10 border border-[#009a97]/30 text-[#009a97] font-bold text-center text-sm">
+              "Independent verification creates confidence."
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* COMMITMENT & CORE QUESTIONS WITH SMOOTH ACCORDION */}
       <section className="py-20 px-4 sm:px-8 lg:px-16 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <motion.div
@@ -289,7 +402,7 @@ export default function AboutPage() {
             viewport={{ once: true, margin: "-80px" }}
             variants={fadeInUp}
           >
-            <span className="text-xs font-bold tracking-widest text-[#00a3d9] uppercase">
+            <span className="text-xs font-bold tracking-widest text-[#009a97] uppercase">
               Our Commitment
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0d2e5c] leading-tight">
@@ -312,120 +425,60 @@ export default function AboutPage() {
             viewport={{ once: true, margin: "-80px" }}
             variants={staggerContainer}
           >
-            {[
-              "Did we receive what we ordered?",
-              "Does it meet the required specifications and standards?",
-              "Are we getting what we paid for?",
-            ].map((question, i) => (
-              <motion.div
-                key={i}
-                variants={fadeInUp}
-                className="bg-white p-6 rounded-2xl shadow-md border border-slate-100 flex items-start gap-4"
-              >
-                <div className="w-10 h-10 rounded-full bg-[#00a3d9]/10 flex-shrink-0 flex items-center justify-center text-[#00a3d9]">
-                  <FiHelpCircle className="w-5 h-5" />
-                </div>
-                <div>
-                  <span className="text-xs font-bold text-[#00a3d9] uppercase">
-                    Core Question 0{i + 1}
-                  </span>
-                  <h3 className="text-base sm:text-lg font-bold text-[#0d2e5c] mt-0.5">
-                    {question}
-                  </h3>
-                </div>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
+            {commitmentQuestions.map((item, i) => {
+              const isOpen = activeIndex === i;
+              return (
+                <motion.div
+                  key={i}
+                  variants={fadeInUp}
+                  className="bg-white rounded-2xl shadow-md border border-slate-100 overflow-hidden transition-all duration-200"
+                >
+                  <button
+                    onClick={() => toggleAccordion(i)}
+                    className="w-full p-6 flex items-start justify-between gap-4 text-left cursor-pointer focus:outline-none"
+                  >
+                    <div className="flex items-start gap-4">
+                      <div className="w-10 h-10 rounded-full bg-[#009a97]/10 flex-shrink-0 flex items-center justify-center text-[#009a97]">
+                        <FiHelpCircle className="w-5 h-5" />
+                      </div>
+                      <div>
+                        <span className="text-xs font-bold text-[#009a97] uppercase">
+                          Core Question 0{i + 1}
+                        </span>
+                        <h3 className="text-base sm:text-lg font-bold text-[#0d2e5c] mt-0.5">
+                          {item.question}
+                        </h3>
+                      </div>
+                    </div>
+                    <div
+                      className={`w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center text-[#0d2e5c] shrink-0 transition-transform duration-300 ${
+                        isOpen ? "rotate-180 bg-[#009a97]/10 text-[#009a97]" : ""
+                      }`}
+                    >
+                      <FiChevronDown className="w-4 h-4" />
+                    </div>
+                  </button>
 
-      {/* INTERNATIONAL FOCUS & INDEPENDENCE MATTERS */}
-      <section className="py-20 bg-[#0d2e5c] text-white px-4 sm:px-8 lg:px-16 relative overflow-hidden mb-10">
-        {/* Section-wide Background Image and Overlay */}
-        <div className="absolute inset-0 pointer-events-none">
-          <img
-            src="/home/cta.webp"
-            alt="Global Network Background"
-            className="w-full h-full object-cover opacity-25"
-          />
-          {/* <div className="absolute inset-0 bg-[#0d2e5c]/85" /> */}
-        </div>
-
-        <div className="absolute top-0 right-0 w-96 h-96 bg-[#00a3d9]/50 rounded-full blur-3xl pointer-events-none" />
-
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 relative z-10">
-          {/* International Focus */}
-          <motion.div
-            className="bg-white rounded-3xl p-8 sm:p-10 border border-slate-100 space-y-6 flex flex-col justify-between shadow-2xl text-slate-800"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-80px" }}
-            variants={fadeInUp}
-          >
-            <div className="space-y-4">
-              <span className="text-xs font-bold tracking-widest text-[#00a3d9] uppercase">
-                Global Network
-              </span>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0d2e5c]">
-                Our International Focus
-              </h2>
-              <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                Singapore provides MedIntegrity Group with a strategic base for
-                international medical-technology and healthcare activities.
-              </p>
-
-              <div className="pt-2 space-y-3">
-                <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider">
-                  Initial Markets Served:
-                </p>
-                <div className="flex flex-wrap gap-3">
-                  <div className="flex items-center gap-2 bg-[#f4f8fb] px-4 py-2 rounded-xl text-xs font-bold text-[#0d2e5c] border border-slate-200">
-                    <FiGlobe className="text-[#00a3d9]" /> Europe
-                  </div>
-                  <div className="flex items-center gap-2 bg-[#f4f8fb] px-4 py-2 rounded-xl text-xs font-bold text-[#0d2e5c] border border-slate-200">
-                    <FiGlobe className="text-[#00a3d9]" /> North America
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <p className="text-xs text-slate-500 italic pt-4 border-t border-slate-100">
-              As the organization develops, MedIntegrity Group intends to expand
-              its international network of technical specialists and inspection
-              capabilities.
-            </p>
-          </motion.div>
-
-          {/* Independence Matters */}
-          <motion.div
-            className="bg-white rounded-3xl p-8 sm:p-10 border border-slate-100 space-y-6 flex flex-col justify-between shadow-2xl text-slate-800"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-80px" }}
-            variants={fadeInUp}
-          >
-            <div className="space-y-4">
-              <span className="text-xs font-bold tracking-widest text-[#00a3d9] uppercase">
-                Impartial Advice
-              </span>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0d2e5c]">
-                Independence Matters
-              </h2>
-              <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                MedIntegrity Group is designed to operate strictly from the
-                perspective of the purchaser. We do not exist to promote a
-                particular medical-equipment manufacturer or product.
-              </p>
-              <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                Our objective is to provide impartial technical information that
-                helps healthcare institutions understand exactly what they are
-                purchasing, what they receive, and whether the two correspond.
-              </p>
-            </div>
-
-            <div className="p-4 rounded-xl bg-[#00a3d9]/10 border border-[#00a3d9]/30 text-[#00a3d9] font-bold text-center text-sm">
-              "Independent verification creates confidence."
-            </div>
+                  <AnimatePresence>
+                    {isOpen && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{
+                          duration: 0.3,
+                          ease: [0.04, 0.62, 0.23, 0.98],
+                        }}
+                      >
+                        <div className="px-6 pb-6 pt-0 text-sm text-slate-600 leading-relaxed border-t border-slate-100/60 mt-2 pt-4">
+                          {item.answer}
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
+              );
+            })}
           </motion.div>
         </div>
       </section>

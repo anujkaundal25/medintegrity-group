@@ -68,7 +68,7 @@ function Process() {
   };
 
   return (
-    <section className="relative w-full py-20 bg-slate-50 text-slate-800 overflow-hidden">
+    <section className="relative w-full py-10 bg-slate-50 text-slate-800 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Section Header */}
@@ -79,7 +79,7 @@ function Process() {
           viewport={{ once: true, margin: "-80px" }}
           variants={fadeInUp}
         >
-          <span className="text-xs sm:text-sm font-semibold tracking-widest text-[#00a3d9] uppercase inline-block">
+          <span className="text-xs sm:text-sm font-semibold tracking-widest text-[#009a97] uppercase inline-block">
             How We Work
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1c226b] leading-tight">
@@ -105,9 +105,9 @@ function Process() {
                 className="group relative p-8 rounded-3xl bg-white border border-slate-100 shadow-md transition-colors duration-300 hover:bg-[#0a1045] hover:shadow-2xl flex flex-col justify-between text-center overflow-hidden cursor-pointer"
               >
                 <div>
-                  {/* Step Number Tag at Top: Only visible on hover */}
+                  {/* Step Number Tag at Top: Always visible on mobile, visible on hover for md and up */}
                   <div className="h-8 mb-2 flex items-center justify-center">
-                    <span className="text-sm font-bold tracking-widest text-[#00a3d9] bg-cyan-50 group-hover:bg-cyan-950/60 group-hover:text-cyan-300 px-3 py-1 rounded-full border border-cyan-200/50 group-hover:border-cyan-500/30 transition-all duration-300 opacity-0 -translate-y-2 group-hover:opacity-100 group-hover:translate-y-0">
+                    <span className="text-sm font-bold tracking-widest text-[#009a97] bg-[#009a97]/10 md:bg-cyan-50 md:group-hover:bg-cyan-950/60 md:group-hover:text-cyan-300 px-3 py-1 rounded-full border border-[#009a97]/20 md:border-cyan-200/50 md:group-hover:border-cyan-500/30 transition-all duration-300 md:opacity-0 md:-translate-y-2 md:group-hover:opacity-100 md:group-hover:translate-y-0">
                       STEP {step.number}
                     </span>
                   </div>
@@ -125,7 +125,7 @@ function Process() {
 
                 {/* Bottom Decorative Line Accent */}
                 <div className="mt-8 pt-4 border-t border-slate-100 group-hover:border-cyan-500/20 transition-colors duration-300 flex justify-center">
-                  <div className="w-8 h-1 bg-[#00a3d9] rounded-full group-hover:w-16 transition-all duration-300" />
+                  <div className="w-8 h-1 bg-[#009a97] rounded-full group-hover:w-16 transition-all duration-300" />
                 </div>
               </motion.div>
             );

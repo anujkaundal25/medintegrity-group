@@ -79,7 +79,7 @@ function AboutUs() {
               
               {/* Text Area */}
               <motion.div className="md:col-span-7 space-y-4" variants={fadeInUp}>
-                <span className="text-xs sm:text-sm font-semibold tracking-wider text-[#00a3d9] uppercase inline-block">
+                <span className="text-xs sm:text-sm font-semibold tracking-wider text-[#009a97] uppercase inline-block">
                   About Us
                 </span>
 
@@ -122,7 +122,7 @@ function AboutUs() {
               <motion.div 
                 variants={fadeInUp}
                 whileHover={{ y: -5 }}
-                className="p-6 bg-cyan-50/60 rounded-2xl border border-cyan-100/50 shadow-sm transition-shadow hover:shadow-md cursor-default"
+                className="p-6 bg-[#009a97]/10 rounded-2xl border border-[#009a97]/20 shadow-sm transition-shadow hover:shadow-md cursor-default"
               >
                 <h3 className="text-lg font-bold text-[#1c226b] mb-2">
                   Independent

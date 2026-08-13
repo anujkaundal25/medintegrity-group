@@ -43,7 +43,7 @@ function Contact() {
   };
 
   return (
-    <section className="relative w-full bg-[#f4f8fb] py-16 font-sans overflow-hidden">
+    <section className="relative w-full bg-[#f4f8fb]  font-sans overflow-hidden">
       
       {/* Main Angled Container */}
       <div 
@@ -71,7 +71,7 @@ function Contact() {
             viewport={{ once: true, margin: "-80px" }}
             variants={fadeInLeft}
           >
-            <span className="text-xs font-bold tracking-widest text-[#00a3d9] uppercase">
+            <span className="text-xs font-bold tracking-widest text-[#009a97] uppercase">
               Independent Medical Equipment Verification &amp; Procurement Assurance
             </span>
 
@@ -85,16 +85,16 @@ function Contact() {
             </p>
 
             {/* Core Value Badges */}
-            <div className="flex flex-wrap gap-2 text-xs font-semibold tracking-wider text-[#00a3d9]">
-              <span className="bg-[#00a3d9]/10 border border-[#00a3d9]/30 px-3 py-1 rounded-full">INDEPENDENT</span>
-              <span className="bg-[#00a3d9]/10 border border-[#00a3d9]/30 px-3 py-1 rounded-full">EXPERIENCED</span>
-              <span className="bg-[#00a3d9]/10 border border-[#00a3d9]/30 px-3 py-1 rounded-full">ACCOUNTABLE</span>
+            <div className="flex flex-wrap gap-2 text-xs font-semibold tracking-wider text-[#009a97]">
+              <span className="bg-[#009a97]/10 border border-[#009a97]/30 px-3 py-1 rounded-full">INDEPENDENT</span>
+              <span className="bg-[#009a97]/10 border border-[#009a97]/30 px-3 py-1 rounded-full">EXPERIENCED</span>
+              <span className="bg-[#009a97]/10 border border-[#009a97]/30 px-3 py-1 rounded-full">ACCOUNTABLE</span>
             </div>
 
             {/* Quick Location & Scope Details */}
             <div className="pt-2 space-y-4 text-sm text-slate-200">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-[#00a3d9]/20 flex items-center justify-center text-[#00a3d9]">
+                <div className="w-10 h-10 rounded-full bg-[#009a97]/20 flex items-center justify-center text-[#009a97]">
                   <FiMapPin className="w-5 h-5" />
                 </div>
                 <div>
@@ -104,7 +104,7 @@ function Contact() {
               </div>
 
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-[#00a3d9]/20 flex items-center justify-center text-[#00a3d9]">
+                <div className="w-10 h-10 rounded-full bg-[#009a97]/20 flex items-center justify-center text-[#009a97]">
                   <FiGlobe className="w-5 h-5" />
                 </div>
                 <div>
@@ -115,7 +115,7 @@ function Contact() {
             </div>
 
             <div className="pt-2">
-              <p className="text-xs italic text-slate-400 border-l-2 border-[#00a3d9] pl-3">
+              <p className="text-xs italic text-slate-400 border-l-2 border-[#009a97] pl-3">
                 "Quality should never be assumed. It should be verified."
               </p>
             </div>
@@ -132,7 +132,7 @@ function Contact() {
             <div className="bg-[#0b1830]/90 backdrop-blur-md rounded-3xl p-8 sm:p-10 shadow-2xl border border-white/10">
               
               <div className="mb-6">
-                <span className="text-xs font-semibold tracking-wider text-[#00a3d9] uppercase">
+                <span className="text-xs font-semibold tracking-wider text-[#009a97] uppercase">
                   Contact MedIntegrity Group
                 </span>
                 <h3 className="text-xl sm:text-2xl font-bold text-white mt-1">
@@ -150,7 +150,7 @@ function Contact() {
                     transition={{ duration: 0.4 }}
                     className="py-12 text-center space-y-3"
                   >
-                    <FiCheckCircle className="w-12 h-12 text-[#00a3d9] mx-auto" />
+                    <FiCheckCircle className="w-12 h-12 text-[#009a97] mx-auto" />
                     <h4 className="text-lg font-bold text-white">Consultation Requested</h4>
                     <p className="text-xs text-slate-300">
                       Thank you. A representative from MedIntegrity Group will review your request and follow up with you shortly.
@@ -176,7 +176,7 @@ function Contact() {
                         value={formData.fullName}
                         onChange={handleChange}
                         placeholder="e.g. Anders Nilsen"
-                        className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-[#00a3d9] transition-colors"
+                        className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-[#009a97] transition-colors"
                       />
                     </div>
 
@@ -191,7 +191,7 @@ function Contact() {
                         value={formData.email}
                         onChange={handleChange}
                         placeholder="e.g. name@institution.org"
-                        className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-[#00a3d9] transition-colors"
+                        className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-[#009a97] transition-colors"
                       />
                     </div>
 
@@ -205,7 +205,7 @@ function Contact() {
                         value={formData.organization}
                         onChange={handleChange}
                         placeholder="e.g. Government Procurement Agency"
-                        className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-[#00a3d9] transition-colors"
+                        className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-[#009a97] transition-colors"
                       />
                     </div>
 
@@ -220,7 +220,7 @@ function Contact() {
                         value={formData.message}
                         onChange={handleChange}
                         placeholder="Briefly describe your equipment procurement or verification needs..."
-                        className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-[#00a3d9] transition-colors resize-none"
+                        className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-[#009a97] transition-colors resize-none"
                       />
                     </div>
 
@@ -228,7 +228,7 @@ function Contact() {
                       type="submit"
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
-                      className="w-full flex items-center justify-center gap-2 py-3.5 px-6 rounded-xl bg-[#00a3d9] hover:bg-[#0082ae] text-white text-sm font-bold tracking-wide transition-colors shadow-lg cursor-pointer mt-2"
+                      className="w-full flex items-center justify-center gap-2 py-3.5 px-6 rounded-xl bg-[#009a97] hover:bg-[#00827f] text-white text-sm font-bold tracking-wide transition-colors shadow-lg cursor-pointer mt-2"
                     >
                       <span>Request Consultation</span>
                       <FiSend className="w-4 h-4" />

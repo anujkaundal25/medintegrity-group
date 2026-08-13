@@ -7,32 +7,45 @@ import Hero from "@/component/home/Hero";
 import Leadership from "@/component/home/Leadership";
 import Process from "@/component/home/Process";
 import Services from "@/component/home/Services";
+import Testimonials from "@/component/home/Testimonials";
 import WhyChooseUs from "@/component/home/WhyChooseUs";
 import Image from "next/image";
 
 export default function Home() {
   return (
-   <div>
-    {/* hero section */}
-    <Hero/>
-    {/* about section */}
-    <About/>
-    {/* leadership */}
-    <Leadership/>
-    {/* service */}
-    <Services/>
-    {/* process */}
-    <Process/>
-    {/* why choose us */}
-    <WhyChooseUs/>
-    {/* Commitment,International Focus,Independence Matters */}
-    <Commitments/>
-    {/* cta */}
-    <CTA/>
-    {/* faq */}
-    <Faq/>
-    {/* contact */}
-    <Contact/>
-   </div>
+    <div>
+      {/* hero section */}
+      <Hero />
+
+      {/* about section */}
+      <About />
+
+      {/* leadership */}
+      {/* <Leadership/> */}
+
+      {/* service */}
+      <Services />
+
+      {/* process */}
+      <Process />
+
+      {/* why choose us */}
+      <WhyChooseUs />
+
+      {/* Commitment,International Focus,Independence Matters */}
+      {/* <Commitments/> */}
+
+      {/* Testimonials */}
+      <Testimonials />
+
+      {/* cta */}
+      <CTA />
+
+      {/* faq */}
+      <Faq />
+
+      {/* contact */}
+      {/* <Contact /> */}
+    </div>
   );
 }
