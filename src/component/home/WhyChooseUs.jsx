@@ -139,13 +139,13 @@ function WhyChooseUs() {
             variants={cardVariants}
             whileHover={{ y: -8 }}
             transition={{ duration: 0.3 }}
-            className="p-8 bg-[#0a1045] text-white rounded-3xl shadow-xl transition-shadow duration-300 flex flex-col justify-between"
+            className="p-8 bg-slate-50 rounded-3xl border border-slate-100 transition-shadow duration-300 hover:shadow-xl flex flex-col justify-between"
           >
             <div>
-              <h3 className="text-xl font-bold text-white mb-3">
+              <h3 className="text-xl font-bold text-[#1c226b] mb-3">
                 Strict Accountability
               </h3>
-              <p className="text-cyan-50 text-sm leading-relaxed">
+              <p className="text-slate-600 text-sm leading-relaxed">
                 What was ordered should be what was delivered, matching all technical benchmarks.
               </p>
             </div>

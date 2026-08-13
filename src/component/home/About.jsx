@@ -122,7 +122,7 @@ function AboutUs() {
               <motion.div 
                 variants={fadeInUp}
                 whileHover={{ y: -5 }}
-                className="p-6 bg-[#009a97]/10 rounded-2xl border border-[#009a97]/20 shadow-sm transition-shadow hover:shadow-md cursor-default"
+                className="p-6 bg-slate-50 rounded-2xl border border-[#009a97]/20 shadow-sm transition-shadow hover:shadow-md cursor-default"
               >
                 <h3 className="text-lg font-bold text-[#1c226b] mb-2">
                   Independent

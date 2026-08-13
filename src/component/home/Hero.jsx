@@ -120,7 +120,7 @@ function Hero() {
               <motion.div whileHover={{ x: 4 }} className="inline-block">
                 <Link
                   href="/about"
-                  className="flex items-center gap-2 text-white font-semibold text-xs sm:text-sm tracking-wider uppercase hover:text-[#009a97] transition-colors cursor-pointer"
+                  className="flex items-center hover:bg-[#009a97] hover:text-white px-6 sm:px-8 py-3.5 gap-2 text-white font-semibold text-xs sm:text-sm tracking-wider uppercase transition-all duration-500 rounded-full cursor-pointer"
                 >
                   <span>Learn More</span>
                   <svg
@@ -161,7 +161,6 @@ function Hero() {
             <FiChevronRight className="w-6 h-6" />
           </button>
         </div>
-
 
         {/* Corrected Slanted Bottom Cutout Accent (Lower Left, Higher Right) */}
         <div

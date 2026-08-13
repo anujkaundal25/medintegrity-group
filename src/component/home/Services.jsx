@@ -11,7 +11,7 @@ function Services() {
         "Independent verification of medical equipment against approved specifications, purchase agreements, and technical requirements.",
       image:
         "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=600",
-      link: "/services",
+      link: "#",
     },
     {
       title: "Manufacturer & Supplier Assessment",
@@ -19,7 +19,7 @@ function Services() {
         "Evaluation of manufacturers and suppliers, including capabilities, quality systems, certifications, production processes, documentation, and ability to meet contractual requirements.",
       image:
         "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=600",
-      link: "/services",
+      link: "#",
     },
     {
       title: "Factory & Pre-Shipment Inspection",
@@ -27,7 +27,7 @@ function Services() {
         "Independent inspection before equipment leaves the manufacturer, helping identify discrepancies, defects, missing components, or deviations from approved specifications.",
       image:
         "https://www.china-quality-inspection.com/wp-content/uploads/2025/05/inspector-conducting-pre-shipment-inspection-in-a-chinese-factory.jpg",
-      link: "/services",
+      link: "#",
     },
   ];
 

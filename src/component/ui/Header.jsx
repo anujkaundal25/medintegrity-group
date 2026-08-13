@@ -10,7 +10,6 @@ import {
   FaPinterestP,
   FaBars,
   FaTimes,
-  FaArrowRight,
 } from "react-icons/fa";
 
 export default function Header() {
@@ -20,8 +19,8 @@ export default function Header() {
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
-    { name: "Services", href: "/services" },
-    { name: "Our Process", href: "/process" },
+    { name: "Services", href: "#" },
+    { name: "Our Process", href: "#" },
     { name: "Contact Us", href: "/contact" },
   ];
 
@@ -156,7 +155,6 @@ export default function Header() {
               className="group flex items-center gap-2 bg-[#0d2e5c] hover:bg-[#019a9a] text-white font-bold text-xs uppercase px-6 py-3 rounded-full transition-all duration-300 shadow-md tracking-wider hover:-translate-y-0.5"
             >
               <span>Contact Us</span>
-              <FaArrowRight className="text-xs transition-transform duration-300 group-hover:translate-x-1" />
             </a>
           </div>
 
@@ -217,7 +215,6 @@ export default function Header() {
               className="flex items-center justify-center gap-2 w-full bg-[#0d2e5c] hover:bg-[#00a3d9] text-white font-bold text-xs uppercase py-3.5 rounded-xl tracking-wider shadow-md transition-colors"
             >
               <span>Contact Us</span>
-              <FaArrowRight className="text-xs" />
             </a>
           </nav>
         </div>

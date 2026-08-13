@@ -15,17 +15,17 @@ function Footer() {
   const navLinks = [
     { name: 'Home', href: '/' },
     { name: 'About Us', href: '/about' },
-    { name: 'Services', href: '/services' },
-    { name: 'Our Process', href: '/process' },
+    { name: 'Services', href: '#' },
+    { name: 'Our Process', href: '#' },
     { name: 'Contact Us', href: '/contact' },
   ]
 
   const services = [
-    { name: 'Medical Equipment Verification', href: '/services' },
-    { name: 'Manufacturer & Supplier Assessment', href: '/services' },
-    { name: 'Factory & Pre-Shipment Inspection', href: '/services' },
-    { name: 'Technical & Documentation Review', href: '/services' },
-    { name: 'Delivery & Acceptance Verification', href: '/services' },
+    { name: 'Medical Equipment Verification', href: '#' },
+    { name: 'Manufacturer & Supplier Assessment', href: '#' },
+    { name: 'Factory & Pre-Shipment Inspection', href: '#' },
+    { name: 'Technical & Documentation Review', href: '#' },
+    { name: 'Delivery & Acceptance Verification', href: '#' },
     { name: 'Procurement Advisory', href: '#' },
 
   ]

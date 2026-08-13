@@ -9,21 +9,21 @@ function Testimonials() {
       quote: "Quality should never be assumed. It should be verified. MedIntegrity Group gave our hospital procurement team the independent oversight we needed to ensure every piece of equipment matched our strict specifications.",
       clientName: "Anders Nilsen",
       title: "CEO, Healthcare Sector",
-      image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200",
+      image: "https://cdn.pixabay.com/photo/2025/08/28/11/47/user-9801872_1280.png",
       rating: 5,
     },
     {
       quote: "What was ordered should be what was delivered. Their pre-shipment and factory inspection process helped us identify discrepancies early, protecting our substantial investment in medical technology.",
       clientName: "Procurement Director",
       title: "Regional Hospital Group",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200",
+      image: "https://www.freeiconspng.com/uploads/blue-user-icon-32.jpg",
       rating: 5,
     },
     {
       quote: "Independent verification creates confidence. Having a trusted partner based in Singapore with an international focus allowed our agency to navigate complex cross-border procurement seamlessly.",
       clientName: "Senior Project Manager",
       title: "Government Health Department",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200",
+      image: "https://cdn.pixabay.com/photo/2014/03/25/16/54/user-297566_1280.png",
       rating: 5,
     },
   ];
@@ -36,7 +36,7 @@ function Testimonials() {
   useEffect(() => {
     const timer = setInterval(() => {
       handleSlideChange((currentIndex + 1) % testimonialsData.length);
-    }, 2000);
+    }, 6000);
     return () => clearInterval(timer);
   }, [currentIndex, testimonialsData.length]);
 
@@ -81,11 +81,10 @@ function Testimonials() {
           <img
             src="/home/test.jpg"
             alt="Medical equipment verification and inspection"
-            className="w-full h-full object-cover transform transition-transform duration-700 ease-out group-hover:scale-105 group-hover:-translate-y-2"
+            className="w-full h-full object-cover transform transition-transform duration-700 ease-out lg:group-hover:scale-105 lg:group-hover:-translate-y-2"
           />
           {/* Rich Gradient Overlay */}
           <div className="absolute inset-0 bg-gradient-to-t from-[#0d2e5c]/80 via-[#0d2e5c]/20 to-transparent pointer-events-none"></div>
-          
         </div>
 
         {/* Right Side: Enhanced Single Review Slider */}
@@ -104,14 +103,14 @@ function Testimonials() {
             </p>
           </div>
 
-          {/* Testimonial Card with Bottom-to-Top Fill Effect using #009a97 */}
+          {/* Testimonial Card with Permanent Mobile Background & Desktop Hover */}
           <div className="relative bg-white p-8 sm:p-10 rounded-[2rem] shadow-2xl border border-slate-100 overflow-hidden group">
             
-            {/* Background color transition fill sweep from Bottom to Top on Hover */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#009a97] to-[#0d2e5c] translate-y-full group-hover:translate-y-0 transition-transform duration-600 ease-in-out pointer-events-none z-0"></div>
+            {/* Background color transition: Always visible on mobile (max-lg:translate-y-0), sweeps on desktop hover */}
+            <div className="absolute inset-0 bg-gradient-to-t from-[#009a97] to-[#0d2e5c] translate-y-0 max-lg:translate-y-0 lg:translate-y-full lg:group-hover:translate-y-0 transition-transform duration-600 ease-in-out pointer-events-none z-0"></div>
 
             {/* Giant Background Quote Icon for Aesthetics */}
-            <FaQuoteLeft className="absolute top-6 right-6 text-slate-100 group-hover:text-white/10 w-20 h-20 pointer-events-none transition-colors duration-500 z-0" />
+            <FaQuoteLeft className="absolute top-6 right-6 text-white/10 max-lg:text-white/10 lg:text-slate-100 lg:group-hover:text-white/15 w-20 h-20 pointer-events-none transition-colors duration-500 z-0" />
 
             {/* Content wrapper with smooth slide animation */}
             <div className={`relative z-10 transition-all duration-300 ease-out ${slideDirection}`}>
@@ -124,25 +123,25 @@ function Testimonials() {
               </div>
 
               {/* Quote */}
-              <p className="text-slate-700 group-hover:text-slate-100 text-base sm:text-lg lg:text-xl leading-relaxed mb-8 italic min-h-[110px] transition-colors duration-500 font-medium">
+              <p className="text-slate-100 max-lg:text-slate-100 lg:text-slate-700 lg:group-hover:text-slate-100 text-base sm:text-lg lg:text-xl leading-relaxed mb-8 italic min-h-[110px] transition-colors duration-500 font-medium">
                 &ldquo;{testimonialsData[currentIndex].quote}&rdquo;
               </p>
 
               {/* Client Profile Details & Interactive Controls */}
-              <div className="flex items-center justify-between pt-6 border-t border-slate-100 group-hover:border-white/15 transition-colors duration-500">
+              <div className="flex items-center justify-between pt-6 border-t border-white/15 max-lg:border-white/15 lg:border-slate-100 lg:group-hover:border-white/15 transition-colors duration-500">
                 <div className="flex items-center gap-4">
                   <div className="relative">
                     <img
                       src={testimonialsData[currentIndex].image}
                       alt={testimonialsData[currentIndex].clientName}
-                      className="w-14 h-14 rounded-full object-cover shadow-md ring-4 ring-white/30 group-hover:ring-white/20 transition-all duration-500"
+                      className="w-14 h-14 rounded-full object-cover shadow-md ring-4 ring-white/20 transition-all duration-500"
                     />
                   </div>
                   <div>
-                    <h3 className="font-bold text-[#0d2e5c] group-hover:text-white text-base sm:text-lg transition-colors duration-500">
+                    <h3 className="font-bold text-white max-lg:text-white lg:text-[#0d2e5c] lg:group-hover:text-white text-base sm:text-lg transition-colors duration-500">
                       {testimonialsData[currentIndex].clientName}
                     </h3>
-                    <p className="text-xs text-[#009a97] group-hover:text-teal-200 font-semibold uppercase tracking-wider transition-colors duration-500">
+                    <p className="text-xs text-teal-200 max-lg:text-teal-200 lg:text-[#009a97] lg:group-hover:text-teal-200 font-semibold uppercase tracking-wider transition-colors duration-500">
                       {testimonialsData[currentIndex].title}
                     </p>
                   </div>
@@ -153,14 +152,14 @@ function Testimonials() {
                   <button
                     onClick={prevSlide}
                     aria-label="Previous Testimonial"
-                    className="w-11 h-11 rounded-full bg-slate-100 group-hover:bg-white/10 group-hover:text-white hover:!bg-[#009a97] hover:!text-white text-slate-700 flex items-center justify-center transition-all duration-300 cursor-pointer shadow-sm hover:scale-105 active:scale-95"
+                    className="w-11 h-11 rounded-full bg-white/10 text-white lg:bg-slate-100 lg:group-hover:bg-white/10 lg:group-hover:text-white hover:!bg-[#009a97] hover:!text-white lg:text-slate-700 flex items-center justify-center transition-all duration-300 cursor-pointer shadow-sm hover:scale-105 active:scale-95"
                   >
                     <FaChevronLeft className="w-4 h-4" />
                   </button>
                   <button
                     onClick={nextSlide}
                     aria-label="Next Testimonial"
-                    className="w-11 h-11 rounded-full bg-slate-100 group-hover:bg-white/10 group-hover:text-white hover:!bg-[#009a97] hover:!text-white text-slate-700 flex items-center justify-center transition-all duration-300 cursor-pointer shadow-sm hover:scale-105 active:scale-95"
+                    className="w-11 h-11 rounded-full bg-white/10 text-white lg:bg-slate-100 lg:group-hover:bg-white/10 lg:group-hover:text-white hover:!bg-[#009a97] hover:!text-white lg:text-slate-700 flex items-center justify-center transition-all duration-300 cursor-pointer shadow-sm hover:scale-105 active:scale-95"
                   >
                     <FaChevronRight className="w-4 h-4" />
                   </button>
