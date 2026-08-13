@@ -98,7 +98,7 @@ export default function ServicesPageAlternating() {
   };
 
   return (
-    <main className="w-full bg-[#f4f8fb] font-sans text-slate-800 overflow-hidden">
+    <main className="w-full bg-[#f4f8fb] text-slate-800 overflow-hidden">
       {/* HERO SECTION */}
       <section className="relative min-h-[60vh] bg-[#0d2e5c] text-white flex items-center justify-center pt-24 pb-16 px-4 sm:px-8 lg:px-16 overflow-hidden">
         <div className="absolute inset-0 pointer-events-none opacity-20">
@@ -119,7 +119,7 @@ export default function ServicesPageAlternating() {
           <span className="inline-block bg-white border border-[#009a97]/30 text-[#009a97] text-xs sm:text-sm font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full">
             Expert Advisory Framework
           </span>
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight tracking-tight">
+          <h1 className="text-3xl sm:text-5xl lg:text-5xl font-bold text-white leading-tight">
             Our Core Services
           </h1>
           <p className="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto font-light">
@@ -170,7 +170,7 @@ export default function ServicesPageAlternating() {
                   isEven ? "lg:col-start-7" : "lg:col-start-1"
                 }`}
               >
-                <h2 className="text-2xl sm:text-4xl font-extrabold text-[#0d2e5c] leading-tight">
+                <h2 className="text-2xl sm:text-4xl font-bold text-[#0d2e5c] leading-tight">
                   {service.title}
                 </h2>
                 <p className="text-slate-600 text-base sm:text-lg leading-relaxed">

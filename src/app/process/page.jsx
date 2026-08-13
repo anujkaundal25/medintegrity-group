@@ -84,7 +84,7 @@ export default function ProcessPage() {
   };
 
   return (
-    <main className="w-full bg-[#f4f8fb] font-sans text-slate-800 overflow-hidden">
+    <main className="w-full bg-[#f4f8fb] text-slate-800 overflow-hidden">
       {/* HERO SECTION */}
       <section className="relative min-h-[60vh] bg-[#0d2e5c] text-white flex items-center justify-center pt-24 pb-16 px-4 sm:px-8 lg:px-16 overflow-hidden">
         <div className="absolute inset-0 pointer-events-none opacity-25">
@@ -105,7 +105,7 @@ export default function ProcessPage() {
           <span className="inline-block bg-white border border-[#009a97]/30 text-[#009a97] text-xs sm:text-sm font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full">
             Step-by-Step Methodology
           </span>
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight tracking-tight">
+          <h1 className="text-3xl sm:text-5xl lg:text-5xl font-bold text-white leading-tight">
             Our Verification Process
           </h1>
           <p className="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto font-light">
@@ -126,7 +126,7 @@ export default function ProcessPage() {
           <span className="text-xs font-bold tracking-widest text-[#009a97] uppercase">
             Workflow Stages
           </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0d2e5c]">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#0d2e5c]">
             From Review to Acceptance
           </h2>
           <p className="text-slate-600 text-sm sm:text-base">
@@ -150,7 +150,7 @@ export default function ProcessPage() {
               <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 mb-8">
                 {/* Number Box matching the requested style */}
                 <div className="bg-[#009a97] hidden lg:block text-white p-6 rounded-2xl shadow-lg flex flex-col items-center justify-center min-w-[120px]">
-                  <span className="text-3xl sm:text-4xl font-extrabold tracking-tight">
+                  <span className="text-3xl sm:text-4xl font-bold tracking-tight">
                     {step.number}
                   </span>
                   <span className="text-[10px] font-bold tracking-widest uppercase opacity-90 ml-2 mt-1">

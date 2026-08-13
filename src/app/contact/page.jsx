@@ -47,7 +47,7 @@ export default function ContactPage() {
   };
 
   return (
-    <main className="w-full bg-[#f4f8fb] font-sans text-slate-800 overflow-hidden">
+    <main className="w-full bg-[#f4f8fb] text-slate-800 overflow-hidden">
       {/* HERO SECTION */}
       <section className="relative min-h-[50vh] bg-[#0d2e5c] text-white flex flex-col justify-between pt-24 pb-16 px-4 sm:px-8 lg:px-16 overflow-hidden">
         {/* Background Image Overlay */}
@@ -74,7 +74,7 @@ export default function ContactPage() {
               <span>/</span>
               <span className="text-[#00a3d9]">Contact</span>
             </div>
-            <h1 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+            <h1 className="text-3xl sm:text-5xl lg:text-5xl font-bold text-white leading-tight">
               Contact MedIntegrity Group
             </h1>
             <p className="text-slate-300 text-sm sm:text-base max-w-xl mx-auto">
@@ -91,7 +91,7 @@ export default function ContactPage() {
             <span className="text-xs font-bold tracking-widest text-[#00a3d9] uppercase">
               Get in Touch
             </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0d2e5c] leading-tight">
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#0d2e5c] leading-tight">
               How we can help you?
             </h2>
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
@@ -147,7 +147,7 @@ export default function ContactPage() {
               <span className="text-xs font-bold tracking-widest text-[#00a3d9] uppercase">
                 Inquiry &amp; Sourcing
               </span>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0d2e5c] leading-tight">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#0d2e5c] leading-tight">
                 Request Pricing or Submit an Inquiry
               </h2>
               <p className="text-slate-600 text-sm leading-relaxed">

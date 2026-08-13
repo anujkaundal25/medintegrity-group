@@ -43,7 +43,7 @@ function Contact() {
   };
 
   return (
-    <section className="relative w-full bg-[#f4f8fb]  font-sans overflow-hidden">
+    <section className="relative w-full bg-[#f4f8fb] overflow-hidden">
       
       {/* Main Angled Container */}
       <div 
@@ -75,7 +75,7 @@ function Contact() {
               Independent Medical Equipment Verification &amp; Procurement Assurance
             </span>
 
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
               Protecting Healthcare Investments <br />
               Through Independent Verification
             </h2>

@@ -6,7 +6,7 @@ import { FaPhone } from "react-icons/fa6";
 
 export default function FloatingWidgets() {
   return (
-    <div className="fixed bottom-28 right-0 z-50 flex flex-col items-end gap-2.5 font-sans pointer-events-none">
+    <div className="fixed bottom-28 right-0 z-50 flex flex-col items-end gap-2.5 pointer-events-none">
       
       {/* WhatsApp */}
       <a

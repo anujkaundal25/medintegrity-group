@@ -69,7 +69,7 @@ function FAQSection() {
   };
 
   return (
-    <section className="relative w-full bg-[#f4f8fb] pb-10 overflow-hidden font-sans">
+    <section className="relative w-full bg-[#f4f8fb] pb-10 overflow-hidden">
       
       {/* Outer Section Header */}
       <motion.div 
@@ -106,7 +106,7 @@ function FAQSection() {
               <span className="text-xs font-semibold tracking-wider text-[#009a97] uppercase">
                 Why MedIntegrity Group?
               </span>
-              <h3 className="text-2xl sm:text-3xl font-extrabold text-[#0a1045] leading-tight">
+              <h3 className="text-2xl sm:text-3xl font-bold text-[#0a1045] leading-tight">
                 Frequently Asked Questions <br className="hidden sm:block" />
                 From Healthcare Clients
               </h3>

@@ -31,7 +31,7 @@ function Footer() {
   ]
 
   return (
-    <footer className="relative bg-[#031d3b] text-white font-sans overflow-hidden border-t border-white/10">
+    <footer className="relative bg-[#031d3b] text-white overflow-hidden border-t border-white/10">
       
       {/* ---------------- WHITE BOX GRID BACKGROUND DESIGN ---------------- */}
       {/* 1. White Grid Lines (Square Box Pattern) */}

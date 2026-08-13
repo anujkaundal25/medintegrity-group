@@ -53,7 +53,7 @@ export default function AboutPage() {
   };
 
   return (
-    <main className="w-full bg-[#f4f8fb] font-sans text-slate-800 overflow-hidden">
+    <main className="w-full bg-[#f4f8fb] text-slate-800 overflow-hidden">
       {/* HERO SECTION */}
       <section className="relative min-h-[85vh] bg-[#0d2e5c] text-white flex items-center justify-center pt-24 pb-20 px-4 sm:px-8 lg:px-16 overflow-hidden">
         {/* Background Image Overlay */}
@@ -78,7 +78,7 @@ export default function AboutPage() {
             <span className="inline-block bg-white border border-[#009a97]/30 text-[#009a97] text-xs sm:text-sm font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full mb-4">
               MedIntegrity Group
             </span>
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight tracking-tight">
+            <h1 className="text-3xl sm:text-5xl lg:text-5xl font-bold text-white leading-tight">
               Independent Medical Equipment Verification &amp; Procurement
               Assurance
             </h1>
@@ -143,7 +143,7 @@ export default function AboutPage() {
             <span className="text-xs font-bold tracking-widest text-[#009a97] uppercase">
               The Value of Oversight
             </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0d2e5c] leading-tight">
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#0d2e5c] leading-tight">
               Why MedIntegrity Group?
             </h2>
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
@@ -211,7 +211,7 @@ export default function AboutPage() {
             <span className="text-xs font-bold tracking-widest text-[#009a97] uppercase">
               Executive Leadership
             </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0d2e5c]">
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#0d2e5c]">
               Guided by Expertise
             </h2>
           </motion.div>
@@ -242,7 +242,7 @@ export default function AboutPage() {
             {/* CEO Bio */}
             <div className="lg:col-span-7 p-8 sm:p-12 space-y-6 flex flex-col justify-center">
               <div className="hidden lg:block space-y-1">
-                <h3 className="text-3xl font-extrabold text-[#0d2e5c]">
+                <h3 className="text-3xl font-bold text-[#0d2e5c]">
                   Anders Nilsen
                 </h3>
                 <p className="text-xs font-semibold text-[#009a97] uppercase tracking-wider">
@@ -328,7 +328,7 @@ export default function AboutPage() {
               <span className="text-xs font-bold tracking-widest text-[#009a97] uppercase">
                 Global Network
               </span>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0d2e5c]">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#0d2e5c]">
                 Our International Focus
               </h2>
               <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
@@ -370,7 +370,7 @@ export default function AboutPage() {
               <span className="text-xs font-bold tracking-widest text-[#009a97] uppercase">
                 Impartial Advice
               </span>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0d2e5c]">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#0d2e5c]">
                 Independence Matters
               </h2>
               <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
@@ -405,7 +405,7 @@ export default function AboutPage() {
             <span className="text-xs font-bold tracking-widest text-[#009a97] uppercase">
               Our Commitment
             </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0d2e5c] leading-tight">
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#0d2e5c] leading-tight">
               Transparent, Accountable &amp; Technically Sound
             </h2>
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
