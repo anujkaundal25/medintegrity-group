@@ -85,7 +85,7 @@ function WhyChooseUsCTA() {
             {/* Main Title */}
             <motion.h2 
               variants={fadeInUp}
-              className="text-3xl sm:text-4xl font-bold text-white leading-tight"
+              className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white leading-tight"
             >
               Quality Should Never Be Assumed. <br className="hidden sm:block" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-teal-200 to-white">
@@ -96,7 +96,7 @@ function WhyChooseUsCTA() {
             {/* Tagline / Sub-description */}
             <motion.p 
               variants={fadeInUp}
-              className="text-slate-200 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto font-normal leading-relaxed"
+              className="text-slate-200 text-sm sm:text-base max-w-2xl mx-auto font-light leading-relaxed"
             >
               Independent medical equipment verification & procurement oversight tailored to protect your facility's investments and patient safety.
             </motion.p>
@@ -104,7 +104,7 @@ function WhyChooseUsCTA() {
             {/* Feature Highlights Pills */}
             <motion.div 
               variants={fadeInUp}
-              className="flex flex-wrap items-center justify-center gap-4 sm:gap-8 pt-2 text-xs sm:text-sm text-slate-200 font-medium"
+              className="flex flex-wrap items-center justify-center gap-4 sm:gap-8 pt-2 text-xs sm:text-sm text-slate-200 font-bold"
             >
               <div className="flex items-center gap-2">
                 <FiCheck className="w-4 h-4 text-[#009a97] shrink-0" />
@@ -127,19 +127,19 @@ function WhyChooseUsCTA() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.96 }}
                   transition={{ duration: 0.2, ease: "easeInOut" }}
-                  className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-[#009a97] hover:bg-cyan-400 text-white hover:text-[#0a1045] font-bold text-sm sm:text-base tracking-wider uppercase transition-all duration-300 shadow-xl shadow-[#009a97]/30 hover:shadow-cyan-400/20 group cursor-pointer"
+                  className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-[#009a97] hover:bg-cyan-400 text-white hover:text-[#0a1045] font-bold text-sm tracking-wide transition-all duration-300 shadow-xl shadow-[#009a97]/30 hover:shadow-cyan-400/20 group cursor-pointer"
                 >
                   <span>Request Verification</span>
-                  <FiArrowRight className="w-5 h-5 group-hover:translate-x-1.5 transition-transform duration-300 ease-out" />
+                  <FiArrowRight className="w-4 h-4 group-hover:translate-x-1.5 transition-transform duration-300 ease-out" />
                 </motion.button>
               </Link>
 
-              <Link href="#" className="inline-block">
-                <motion.button 
+              <Link href="/services" className="inline-block">
+                <motion.button
                   whileHover={{ scale: 1.05, backgroundColor: "rgba(255, 255, 255, 0.1)" }}
                   whileTap={{ scale: 0.96 }}
                   transition={{ duration: 0.2, ease: "easeInOut" }}
-                  className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-white/5 border border-white/20 text-white font-bold text-sm sm:text-base tracking-wider uppercase transition-all duration-300 backdrop-blur-md cursor-pointer"
+                  className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-white/5 border border-white/20 text-white font-bold text-sm tracking-wide transition-all duration-300 backdrop-blur-md cursor-pointer"
                 >
                   <span>Explore Services</span>
                 </motion.button>

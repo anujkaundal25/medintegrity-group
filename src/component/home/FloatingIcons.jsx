@@ -10,7 +10,7 @@ export default function FloatingWidgets() {
       
       {/* WhatsApp */}
       <a
-        href="#"
+        href="https://wa.me/6512345678"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="WhatsApp Chat"
@@ -27,7 +27,7 @@ export default function FloatingWidgets() {
 
       {/* Phone */}
       <a
-        href="#"
+        href="tel:+6512345678"
         aria-label="Call Now"
         className="pointer-events-auto group flex items-center bg-[#0d2e5c] hover:bg-[#009a97] text-white pl-4 pr-3.5 py-3 rounded-l-full shadow-[-4px_4px_15px_rgba(0,0,0,0.15)] translate-x-[calc(100%-48px)] hover:translate-x-0 transition-transform duration-300 ease-in-out cursor-pointer"
       >

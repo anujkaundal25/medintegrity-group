@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo } from "react";
+import { usePathname } from "next/navigation";
 import {
   FaEnvelope,
   FaPhoneAlt,
@@ -13,16 +14,22 @@ import {
 } from "react-icons/fa";
 
 export default function Header() {
+  const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
-    { name: "Services", href: "#" },
-    { name: "Our Process", href: "#" },
+    { name: "Services", href: "/services" },
+    { name: "Our Process", href: "/our-process" },
     { name: "Contact Us", href: "/contact" },
   ];
+
+  const isActive = (href) => {
+    if (href === "/") return pathname === "/";
+    return pathname === href || pathname.startsWith(href + "/");
+  };
 
   // Optimized Scroll Listener
   useEffect(() => {
@@ -84,34 +91,34 @@ export default function Header() {
             {/* LEFT - CONTACT */}
             <div className="flex items-center gap-4 sm:gap-6 font-semibold tracking-wide text-[10px] sm:text-xs">
               <a
-                href="mailto:hello@email.co"
+                href="mailto:procurement@medintegritygroup.com"
                 className="flex items-center gap-2 hover:text-[#00a3d9] transition-colors whitespace-nowrap"
               >
                 <FaEnvelope className="text-xs sm:text-sm" />
-                <span className="hidden sm:inline">HELLO@EMAIL.CO</span>
+                <span className="hidden sm:inline">PROCUREMENT@MEDINTEGRITYGROUP.COM</span>
               </a>
 
               <a
-                href="tel:+62123486789"
+                href="tel:+6512345678"
                 className="flex items-center gap-2 hover:text-[#00a3d9] transition-colors whitespace-nowrap"
               >
                 <FaPhoneAlt className="text-xs sm:text-sm" />
-                <span className="hidden sm:inline">+62 123 486 789</span>
+                <span className="hidden sm:inline">+65 1234 5678</span>
               </a>
             </div>
 
             {/* RIGHT - SOCIAL */}
             <div className="flex items-center gap-3 sm:gap-5 text-xs">
-              <a href="#" aria-label="Facebook" className="hover:text-[#00a3d9] transition-colors">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="hover:text-[#00a3d9] transition-colors">
                 <FaFacebookF />
               </a>
-              <a href="#" aria-label="Twitter" className="hover:text-[#00a3d9] transition-colors">
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="hover:text-[#00a3d9] transition-colors">
                 <FaTwitter />
               </a>
-              <a href="#" aria-label="YouTube" className="hover:text-[#00a3d9] transition-colors">
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="hover:text-[#00a3d9] transition-colors">
                 <FaYoutube />
               </a>
-              <a href="#" aria-label="Pinterest" className="hover:text-[#00a3d9] transition-colors">
+              <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" aria-label="Pinterest" className="hover:text-[#00a3d9] transition-colors">
                 <FaPinterestP />
               </a>
             </div>
@@ -137,15 +144,34 @@ export default function Header() {
 
           {/* DESKTOP NAVIGATION */}
           <nav className="hidden xl:flex items-center gap-7 2xl:gap-9 h-full text-[14px] font-bold">
-            {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                className="relative flex items-center h-full whitespace-nowrap text-[#0d2e5c] hover:text-[#019a9a] transition-colors duration-200"
-              >
-                {link.name}
-              </a>
-            ))}
+            {navLinks.map((link) => {
+              const active = isActive(link.href);
+              return (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  className={`relative flex items-center h-full whitespace-nowrap transition-all duration-300 ${
+                    active
+                      ? "text-[#009a97]"
+                      : "text-[#0d2e5c] hover:text-[#009a97]"
+                  }`}
+                >
+                  <span className="relative py-1">
+                    {link.name}
+                    {/* Underline positioned just below the text, not at navbar bottom */}
+                    <span
+                      className={`absolute left-1/2 -translate-x-1/2 bottom-[-6px] h-[3px] rounded-full bg-[#009a97] transition-all duration-300 ease-out ${
+                        active ? "w-[80%] opacity-100" : "w-0 opacity-0"
+                      }`}
+                    />
+                    {/* Soft teal glow under the underline, tight to text */}
+                    {active && (
+                      <span className="absolute left-1/2 -translate-x-1/2 bottom-[-10px] w-12 h-3 bg-[#009a97]/30 blur-[6px] pointer-events-none rounded-full" />
+                    )}
+                  </span>
+                </a>
+              );
+            })}
           </nav>
 
           {/* CONTACT BUTTON */}
@@ -196,16 +222,23 @@ export default function Header() {
           `}
         >
           <nav className="flex flex-col gap-2 px-5 py-5">
-            {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="block w-full py-3 px-4 rounded-lg text-sm font-bold text-[#0d2e5c] hover:bg-slate-100 hover:text-[#00a3d9] transition-all"
-              >
-                {link.name}
-              </a>
-            ))}
+            {navLinks.map((link) => {
+              const active = isActive(link.href);
+              return (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className={`block w-full py-3 px-4 rounded-lg text-sm font-bold transition-all ${
+                    active
+                      ? "bg-[#009a97]/10 text-[#009a97] border-l-4 border-[#009a97]"
+                      : "text-[#0d2e5c] hover:bg-slate-100 hover:text-[#009a97]"
+                  }`}
+                >
+                  {link.name}
+                </a>
+              );
+            })}
 
             <div className="border-t border-slate-200 my-2" />
 

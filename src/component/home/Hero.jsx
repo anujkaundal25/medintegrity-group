@@ -75,7 +75,7 @@ function Hero() {
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <motion.span
-              className="text-xs sm:text-sm font-semibold tracking-wider text-[#009a97] uppercase block"
+              className="text-xs sm:text-sm font-semibold tracking-widest text-[#009a97] uppercase block"
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
@@ -84,7 +84,7 @@ function Hero() {
             </motion.span>
 
             <motion.h1
-              className="text-3xl sm:text-5xl lg:text-5xl font-bold text-white leading-tight"
+              className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white leading-tight"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -93,7 +93,7 @@ function Hero() {
             </motion.h1>
 
             <motion.p
-              className="text-slate-300 text-sm sm:text-base leading-relaxed"
+              className="text-slate-300 text-sm sm:text-base leading-relaxed font-light"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
@@ -109,10 +109,10 @@ function Hero() {
               transition={{ duration: 0.8, delay: 0.4 }}
             >
               <motion.a
-                href="#services"
+                href="/services"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-6 sm:px-8 py-3.5 bg-[#009a97] hover:bg-[#007f7c] text-white font-semibold text-xs sm:text-sm rounded-full tracking-wider transition-colors duration-300 shadow-lg shadow-[#009a97]/30 uppercase inline-block"
+                className="px-6 sm:px-8 py-3.5 bg-[#009a97] hover:bg-[#007f7c] text-white font-bold text-sm rounded-full tracking-wide transition-colors duration-300 shadow-lg shadow-[#009a97]/30 inline-block"
               >
                 Our Services
               </motion.a>
@@ -120,7 +120,7 @@ function Hero() {
               <motion.div whileHover={{ x: 4 }} className="inline-block">
                 <Link
                   href="/about"
-                  className="flex items-center hover:bg-[#009a97] hover:text-white px-6 sm:px-8 py-3.5 gap-2 text-white font-semibold text-xs sm:text-sm tracking-wider uppercase transition-all duration-500 rounded-full cursor-pointer"
+                  className="flex items-center hover:bg-[#009a97] hover:text-white px-6 sm:px-8 py-3.5 gap-2 text-white font-bold text-sm tracking-wide transition-all duration-500 rounded-full cursor-pointer"
                 >
                   <span>Learn More</span>
                   <svg

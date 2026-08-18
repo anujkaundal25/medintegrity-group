@@ -74,10 +74,10 @@ export default function ContactPage() {
               <span>/</span>
               <span className="text-[#00a3d9]">Contact</span>
             </div>
-            <h1 className="text-3xl sm:text-5xl lg:text-5xl font-bold text-white leading-tight">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white leading-tight">
               Contact MedIntegrity Group
             </h1>
-            <p className="text-slate-300 text-sm sm:text-base max-w-xl mx-auto">
+            <p className="text-slate-300 text-sm sm:text-base max-w-xl mx-auto font-light leading-relaxed">
               Let&apos;s discuss your next medical-equipment procurement and independent verification requirements.
             </p>
           </motion.div>
@@ -124,10 +124,14 @@ export default function ContactPage() {
               <div className="relative z-10 pt-4 border-t border-white/10 space-y-3 text-xs sm:text-sm">
                 <div className="flex items-center gap-3 text-slate-200">
                   <FiMail className="w-4 h-4 text-[#00a3d9] flex-shrink-0" />
-                  <span><strong>Email:</strong> procurement@medintegritygroup.com</span>
+                  <a href="mailto:procurement@medintegritygroup.com" className="hover:text-[#00a3d9] transition-colors"><strong>Email:</strong> procurement@medintegritygroup.com</a>
                 </div>
                 <div className="flex items-center gap-3 text-slate-200">
                   <FiPhone className="w-4 h-4 text-[#00a3d9] flex-shrink-0" />
+                  <a href="tel:+6512345678" className="hover:text-[#00a3d9] transition-colors"><strong>Phone:</strong> +65 1234 5678</a>
+                </div>
+                <div className="flex items-center gap-3 text-slate-200">
+                  <FiClock className="w-4 h-4 text-[#00a3d9] flex-shrink-0" />
                   <span><strong>Base:</strong> Singapore (Serving Europe &amp; North America)</span>
                 </div>
                 <div className="flex items-center gap-3 text-slate-200">
@@ -147,7 +151,7 @@ export default function ContactPage() {
               <span className="text-xs font-bold tracking-widest text-[#00a3d9] uppercase">
                 Inquiry &amp; Sourcing
               </span>
-              <h2 className="text-2xl sm:text-3xl font-bold text-[#0d2e5c] leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#0d2e5c] leading-tight">
                 Request Pricing or Submit an Inquiry
               </h2>
               <p className="text-slate-600 text-sm leading-relaxed">

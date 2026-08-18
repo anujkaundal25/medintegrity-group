@@ -85,7 +85,7 @@ function WhyChooseUs() {
             <span className="text-xs sm:text-sm font-semibold tracking-wider text-[#009a97] uppercase inline-block">
               Why Choose Us
             </span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#1c226b] leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1c226b] leading-tight">
               Why MedIntegrity Group?
             </h2>
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed pt-2">

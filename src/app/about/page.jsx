@@ -7,8 +7,9 @@ import {
   FiMapPin,
   FiGlobe,
   FiHelpCircle,
-  FiSend,
   FiChevronDown,
+  FiCheckCircle,
+  FiShield,
 } from "react-icons/fi";
 
 export default function AboutPage() {
@@ -22,15 +23,18 @@ export default function AboutPage() {
   const commitmentQuestions = [
     {
       question: "Did we receive what we ordered?",
-      answer: "We verify equipment upon delivery, checking model, configuration, quantity, accessories, documentation, and other contractual requirements before final acceptance."
+      answer:
+        "We verify equipment upon delivery, checking model, configuration, quantity, accessories, documentation, and other contractual requirements before final acceptance.",
     },
     {
       question: "Does it meet the required specifications and standards?",
-      answer: "We review technical documentation, certificates, specifications, manuals, configurations, and conduct independent verification against approved specifications and technical requirements."
+      answer:
+        "We review technical documentation, certificates, specifications, manuals, configurations, and conduct independent verification against approved specifications and technical requirements.",
     },
     {
       question: "Are we getting what we paid for?",
-      answer: "Our objective is to provide impartial technical information that helps healthcare institutions understand exactly what they are purchasing, what they receive, and whether the two correspond."
+      answer:
+        "Our objective is to provide impartial technical information that helps healthcare institutions understand exactly what they are purchasing, what they receive, and whether the two correspond.",
     },
   ];
 
@@ -78,7 +82,7 @@ export default function AboutPage() {
             <span className="inline-block bg-white border border-[#009a97]/30 text-[#009a97] text-xs sm:text-sm font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full mb-4">
               MedIntegrity Group
             </span>
-            <h1 className="text-3xl sm:text-5xl lg:text-5xl font-bold text-white leading-tight">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white leading-tight">
               Independent Medical Equipment Verification &amp; Procurement
               Assurance
             </h1>
@@ -86,14 +90,14 @@ export default function AboutPage() {
 
           <motion.p
             variants={fadeInUp}
-            className="text-slate-300 text-base sm:text-xl max-w-3xl mx-auto leading-relaxed font-light"
+            className="text-slate-300 text-sm sm:text-base max-w-3xl mx-auto leading-relaxed font-light"
           >
             Protecting healthcare investments through independent verification.
           </motion.p>
 
           <motion.div
             variants={fadeInUp}
-            className="text-slate-300 text-sm sm:text-base max-w-4xl mx-auto leading-relaxed"
+            className="text-slate-300 text-xs sm:text-sm max-w-4xl mx-auto leading-relaxed"
           >
             MedIntegrity Group is a Singapore-based medical equipment
             verification and procurement advisory firm serving healthcare
@@ -101,18 +105,18 @@ export default function AboutPage() {
             across Europe and North America.
           </motion.div>
 
-          {/* Badges */}
+          {/* BADGES FIXED TO WHITE TEXT */}
           <motion.div
             variants={fadeInUp}
             className="flex flex-wrap justify-center gap-3 pt-2"
           >
-            <span className="bg-[#009a97]/10 border border-[#009a97]/30 text-[#009a97] text-xs font-bold tracking-wider uppercase px-4 py-1.5 rounded-full">
+            <span className="bg-[#009a97]/20 border border-[#009a97]/50 text-white text-xs font-bold tracking-wider uppercase px-4 py-1.5 rounded-full backdrop-blur-md">
               Independent
             </span>
-            <span className="bg-[#009a97]/10 border border-[#009a97]/30 text-[#009a97] text-xs font-bold tracking-wider uppercase px-4 py-1.5 rounded-full">
+            <span className="bg-[#009a97]/20 border border-[#009a97]/50 text-white text-xs font-bold tracking-wider uppercase px-4 py-1.5 rounded-full backdrop-blur-md">
               Experienced
             </span>
-            <span className="bg-[#009a97]/10 border border-[#009a97]/30 text-[#009a97] text-xs font-bold tracking-wider uppercase px-4 py-1.5 rounded-full">
+            <span className="bg-[#009a97]/20 border border-[#009a97]/50 text-white text-xs font-bold tracking-wider uppercase px-4 py-1.5 rounded-full backdrop-blur-md">
               Accountable
             </span>
           </motion.div>
@@ -120,7 +124,7 @@ export default function AboutPage() {
           {/* Action Button */}
           <motion.div variants={fadeInUp} className="pt-4">
             <a
-              href="#contact"
+              href="/contact"
               className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[#009a97] hover:bg-[#00827f] text-white font-bold text-sm tracking-wide shadow-lg shadow-[#009a97]/30 transition-all transform hover:-translate-y-0.5 cursor-pointer"
             >
               <span>Request a Consultation</span>
@@ -226,7 +230,7 @@ export default function AboutPage() {
             {/* CEO Image */}
             <div className="lg:col-span-5 relative min-h-[380px] lg:min-h-full">
               <img
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=1000&q=80"
+                src="/founder.jpeg"
                 alt="Anders Nilsen - CEO MedIntegrity Group"
                 className="w-full h-full object-cover object-top"
               />
@@ -302,93 +306,139 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* INTERNATIONAL FOCUS & INDEPENDENCE MATTERS */}
-      <section className="py-20 bg-[#0d2e5c] text-white px-4 sm:px-8 lg:px-16 relative overflow-hidden">
-        {/* Section-wide Background Image and Overlay */}
-        <div className="absolute inset-0 pointer-events-none">
-          <img
-            src="/home/cta.webp"
-            alt="Global Network Background"
-            className="w-full h-full object-cover opacity-25"
-          />
-        </div>
+      {/* REDESIGNED: INTERNATIONAL FOCUS & INDEPENDENCE SECTION */}
+      <section className="py-24 bg-[#071933] text-white px-4 sm:px-8 lg:px-16 relative overflow-hidden">
+        {/* Subtle Ambient Background Gradients */}
+        <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-[#009a97]/15 rounded-full blur-[140px] pointer-events-none" />
+        <div className="absolute bottom-0 left-10 w-[400px] h-[400px] bg-[#0d2e5c] rounded-full blur-[100px] pointer-events-none" />
 
-        <div className="absolute top-0 right-0 w-96 h-96 bg-[#009a97]/50 rounded-full blur-3xl pointer-events-none" />
-
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 relative z-10">
-          {/* International Focus */}
+        <div className="max-w-7xl mx-auto space-y-12 relative z-10">
           <motion.div
-            className="bg-white rounded-3xl p-8 sm:p-10 border border-slate-100 space-y-6 flex flex-col justify-between shadow-2xl text-slate-800"
+            className="text-center max-w-3xl mx-auto space-y-3"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-80px" }}
             variants={fadeInUp}
           >
-            <div className="space-y-4">
-              <span className="text-xs font-bold tracking-widest text-[#009a97] uppercase">
-                Global Network
-              </span>
-              <h2 className="text-2xl sm:text-3xl font-bold text-[#0d2e5c]">
-                Our International Focus
-              </h2>
-              <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                Singapore provides MedIntegrity Group with a strategic base for
-                international medical-technology and healthcare activities.
-              </p>
-
-              <div className="pt-2 space-y-3">
-                <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider">
-                  Initial Markets Served:
-                </p>
-                <div className="flex flex-wrap gap-3">
-                  <div className="flex items-center gap-2 bg-[#f4f8fb] px-4 py-2 rounded-xl text-xs font-bold text-[#0d2e5c] border border-slate-200">
-                    <FiGlobe className="text-[#009a97]" /> Europe
-                  </div>
-                  <div className="flex items-center gap-2 bg-[#f4f8fb] px-4 py-2 rounded-xl text-xs font-bold text-[#0d2e5c] border border-slate-200">
-                    <FiGlobe className="text-[#009a97]" /> North America
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <p className="text-xs text-slate-500 italic pt-4 border-t border-slate-100">
-              As the organization develops, MedIntegrity Group intends to expand
-              its international network of technical specialists and inspection
-              capabilities.
+            <span className="text-xs font-bold tracking-widest text-[#009a97] uppercase bg-[#009a97]/10 px-4 py-1.5 rounded-full border border-[#009a97]/20 inline-block">
+              Global Standards &amp; Principles
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+              Built for Scale, Rooted in Integrity
+            </h2>
+            <p className="text-slate-400 text-sm sm:text-base font-light">
+              Connecting strategic hubs with global procurement networks to deliver unbiased technical oversight.
             </p>
           </motion.div>
 
-          {/* Independence Matters */}
-          <motion.div
-            className="bg-white rounded-3xl p-8 sm:p-10 border border-slate-100 space-y-6 flex flex-col justify-between shadow-2xl text-slate-800"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-80px" }}
-            variants={fadeInUp}
-          >
-            <div className="space-y-4">
-              <span className="text-xs font-bold tracking-widest text-[#009a97] uppercase">
-                Impartial Advice
-              </span>
-              <h2 className="text-2xl sm:text-3xl font-bold text-[#0d2e5c]">
-                Independence Matters
-              </h2>
-              <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                MedIntegrity Group is designed to operate strictly from the
-                perspective of the purchaser. We do not exist to promote a
-                particular medical-equipment manufacturer or product.
-              </p>
-              <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                Our objective is to provide impartial technical information that
-                helps healthcare institutions understand exactly what they are
-                purchasing, what they receive, and whether the two correspond.
-              </p>
-            </div>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+            {/* Card 1: International Focus */}
+            <motion.div
+              className="lg:col-span-7 bg-[#0d2e5c]/60 border border-slate-700/60 rounded-3xl p-8 sm:p-10 backdrop-blur-xl flex flex-col justify-between shadow-2xl relative overflow-hidden group"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-80px" }}
+              variants={fadeInUp}
+            >
+              {/* Card Glow Effect on Hover */}
+              <div className="absolute -right-20 -top-20 w-60 h-60 bg-[#009a97]/20 rounded-full blur-3xl group-hover:bg-[#009a97]/30 transition-all duration-500 pointer-events-none" />
 
-            <div className="p-4 rounded-xl bg-[#009a97]/10 border border-[#009a97]/30 text-[#009a97] font-bold text-center text-sm">
-              "Independent verification creates confidence."
-            </div>
-          </motion.div>
+              <div className="space-y-6 relative z-10">
+                <div className="flex items-center justify-between">
+                  <div className="w-12 h-12 rounded-2xl bg-[#009a97]/20 border border-[#009a97]/40 flex items-center justify-center text-[#009a97]">
+                    <FiGlobe className="w-6 h-6 text-white" />
+                  </div>
+                  <span className="text-xs font-bold tracking-widest text-[#009a97] uppercase">
+                    HQ: Singapore
+                  </span>
+                </div>
+
+                <div>
+                  <h3 className="text-2xl sm:text-3xl font-bold text-white mb-3">
+                    Our International Focus
+                  </h3>
+                  <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-light">
+                    Singapore provides MedIntegrity Group with a strategic base for
+                    international medical-technology and healthcare activities, acting as an impartial bridge between manufacturing markets and healthcare buyers.
+                  </p>
+                </div>
+
+                <div className="pt-2 space-y-3">
+                  <span className="text-xs font-bold text-slate-400 uppercase tracking-wider block">
+                    Active Regional Corridors
+                  </span>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div className="flex items-center gap-3 bg-[#071933]/80 border border-slate-700/80 p-3.5 rounded-2xl">
+                      <div className="w-2.5 h-2.5 rounded-full bg-[#009a97] animate-pulse" />
+                      <div>
+                        <p className="text-sm font-bold text-white">Europe</p>
+                        <p className="text-[11px] text-slate-400">Institutional &amp; Public Health</p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-center gap-3 bg-[#071933]/80 border border-slate-700/80 p-3.5 rounded-2xl">
+                      <div className="w-2.5 h-2.5 rounded-full bg-[#009a97] animate-pulse" />
+                      <div>
+                        <p className="text-sm font-bold text-white">North America</p>
+                        <p className="text-[11px] text-slate-400">Hospital Networks &amp; Agencies</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="pt-6 mt-6 border-t border-slate-700/60 flex items-center gap-3 text-xs text-slate-400 italic relative z-10">
+                <FiMapPin className="text-[#009a97] shrink-0 w-4 h-4" />
+                <span>Continuously expanding our international network of technical specialists and site inspection capabilities.</span>
+              </div>
+            </motion.div>
+
+            {/* Card 2: Independence Matters */}
+            <motion.div
+              className="lg:col-span-5 bg-gradient-to-b from-white to-[#f4f8fb] text-slate-800 rounded-3xl p-8 sm:p-10 shadow-2xl flex flex-col justify-between border border-white/20 relative overflow-hidden"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-80px" }}
+              variants={fadeInUp}
+            >
+              <div className="space-y-6">
+                <div className="flex items-center justify-between">
+                  <div className="w-12 h-12 rounded-2xl bg-[#0d2e5c] flex items-center justify-center text-white shadow-md">
+                    <FiShield className="w-6 h-6 text-[#009a97]" />
+                  </div>
+                  <span className="text-xs font-bold text-[#009a97] uppercase tracking-wider bg-[#009a97]/10 px-3 py-1 rounded-full">
+                    100% Unbiased
+                  </span>
+                </div>
+
+                <div>
+                  <h3 className="text-2xl sm:text-3xl font-bold text-[#0d2e5c] mb-3">
+                    Independence Matters
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                    MedIntegrity Group is structured to operate strictly from the perspective of the purchaser. We do not manufacture equipment or align with vendor commissions.
+                  </p>
+                  <p className="text-slate-600 text-sm leading-relaxed">
+                    Our sole objective is to deliver impartial, bulletproof technical facts that ensure total contractual and regulatory compliance.
+                  </p>
+                </div>
+              </div>
+
+              <div className="mt-8 space-y-4">
+                <div className="p-4 rounded-2xl bg-[#0d2e5c] text-white space-y-2 relative overflow-hidden shadow-lg">
+                  <div className="absolute right-0 bottom-0 opacity-10 translate-x-2 translate-y-2">
+                    <FiCheckCircle className="w-24 h-24 text-white" />
+                  </div>
+                  <span className="text-[10px] font-extrabold uppercase tracking-widest text-[#009a97] block">
+                    Our Promise
+                  </span>
+                  <p className="text-sm font-semibold italic text-slate-100 relative z-10">
+                    "Independent verification creates confidence. Confidence protects clinical outcomes."
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
@@ -405,7 +455,7 @@ export default function AboutPage() {
             <span className="text-xs font-bold tracking-widest text-[#009a97] uppercase">
               Our Commitment
             </span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#0d2e5c] leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#0d2e5c] leading-tight">
               Transparent, Accountable &amp; Technically Sound
             </h2>
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed">

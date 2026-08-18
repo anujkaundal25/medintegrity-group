@@ -83,7 +83,7 @@ function AboutUs() {
                   About Us
                 </span>
 
-                <h2 className="text-3xl sm:text-4xl font-bold text-[#1c226b] leading-tight">
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1c226b] leading-tight">
                   MedIntegrity Group
                 </h2>
 

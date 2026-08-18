@@ -15,19 +15,18 @@ function Footer() {
   const navLinks = [
     { name: 'Home', href: '/' },
     { name: 'About Us', href: '/about' },
-    { name: 'Services', href: '#' },
-    { name: 'Our Process', href: '#' },
+    { name: 'Services', href: '/services' },
+    { name: 'Our Process', href: '/our-process' },
     { name: 'Contact Us', href: '/contact' },
   ]
 
   const services = [
-    { name: 'Medical Equipment Verification', href: '#' },
-    { name: 'Manufacturer & Supplier Assessment', href: '#' },
-    { name: 'Factory & Pre-Shipment Inspection', href: '#' },
-    { name: 'Technical & Documentation Review', href: '#' },
-    { name: 'Delivery & Acceptance Verification', href: '#' },
-    { name: 'Procurement Advisory', href: '#' },
-
+    { name: 'Medical Equipment Verification', href: '/services' },
+    { name: 'Manufacturer & Supplier Assessment', href: '/services' },
+    { name: 'Factory & Pre-Shipment Inspection', href: '/services' },
+    { name: 'Technical & Documentation Review', href: '/services' },
+    { name: 'Delivery & Acceptance Verification', href: '/services' },
+    { name: 'Procurement Advisory', href: '/services' },
   ]
 
   return (
@@ -58,14 +57,14 @@ function Footer() {
           <div className="lg:col-span-4 bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl p-6 flex flex-col justify-between gap-4 shadow-xl">
             <div className="flex flex-col gap-3">
               <a href="/" className="flex items-center gap-3 shrink-0 group">
-                <img src="/footer.jpg" alt=""
+                <img src="/logo.png" alt="MedIntegrity Group"
                 height={150}
-                width={150} 
-                className='rounded-lg'/>
+                width={150}
+                className='rounded-lg object-contain'/>
               </a>
 
               <p className="text-slate-300 text-sm leading-relaxed">
-                Providing trusted medical procurement solutions, high-grade healthcare logistics, and seamless supply chain integration worldwide.
+                Independent medical equipment verification and procurement advisory firm protecting healthcare investments across Europe &amp; North America from Singapore.
               </p>
             </div>
 
@@ -119,7 +118,7 @@ function Footer() {
               Stay Informed
             </h3>
             <p className="text-slate-300 text-xs leading-relaxed">
-              Subscribe to receive the latest updates in medical logistics and supply availability.
+                Subscribe to receive the latest updates on medical equipment procurement standards and verification best practices.
             </p>
 
             <form onSubmit={(e) => e.preventDefault()} className="flex flex-col gap-2.5 mt-1">
@@ -138,7 +137,7 @@ function Footer() {
                   <FaArrowRight className="text-xs" />
                 </button>
               </div>
-              <span className="text-[10px] text-slate-400">Direct inquiries: hello@email.co</span>
+              <span className="text-[10px] text-slate-400">Direct inquiries: procurement@medintegritygroup.com</span>
             </form>
           </div>
 
@@ -151,15 +150,17 @@ function Footer() {
           {/* Social Links inside subtle white boxes */}
           <div className="flex items-center gap-2.5">
             {[
-              { icon: <FaFacebookF />, label: 'Facebook' },
-              { icon: <FaTwitter />, label: 'Twitter' },
-              { icon: <FaYoutube />, label: 'YouTube' },
-              { icon: <FaPinterestP />, label: 'Pinterest' },
+              { icon: <FaFacebookF />, label: 'Facebook', href: 'https://facebook.com' },
+              { icon: <FaTwitter />, label: 'Twitter', href: 'https://twitter.com' },
+              { icon: <FaYoutube />, label: 'YouTube', href: 'https://youtube.com' },
+              { icon: <FaPinterestP />, label: 'Pinterest', href: 'https://pinterest.com' },
             ].map((social, idx) => (
-              <a 
+              <a
                 key={idx}
-                href="#" 
-                className="w-8 h-8 rounded-lg bg-white/5 hover:bg-[#009a97] hover:text-white flex items-center justify-center transition-all duration-300 border border-white/10" 
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-8 h-8 rounded-lg bg-white/5 hover:bg-[#009a97] hover:text-white flex items-center justify-center transition-all duration-300 border border-white/10"
                 aria-label={social.label}
               >
                 <span className="text-xs">{social.icon}</span>

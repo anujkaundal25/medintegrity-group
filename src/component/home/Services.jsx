@@ -11,7 +11,7 @@ function Services() {
         "Independent verification of medical equipment against approved specifications, purchase agreements, and technical requirements.",
       image:
         "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=600",
-      link: "#",
+      link: "/services",
     },
     {
       title: "Manufacturer & Supplier Assessment",
@@ -19,15 +19,15 @@ function Services() {
         "Evaluation of manufacturers and suppliers, including capabilities, quality systems, certifications, production processes, documentation, and ability to meet contractual requirements.",
       image:
         "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=600",
-      link: "#",
+      link: "/services",
     },
     {
       title: "Factory & Pre-Shipment Inspection",
       description:
         "Independent inspection before equipment leaves the manufacturer, helping identify discrepancies, defects, missing components, or deviations from approved specifications.",
       image:
-        "https://www.china-quality-inspection.com/wp-content/uploads/2025/05/inspector-conducting-pre-shipment-inspection-in-a-chinese-factory.jpg",
-      link: "#",
+        "https://images.pexels.com/photos/3938022/pexels-photo-3938022.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      link: "/services",
     },
   ];
 
@@ -90,7 +90,7 @@ function Services() {
           <span className="text-xs sm:text-sm font-semibold tracking-widest text-[#009a97] uppercase inline-block">
             Our Services
           </span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-white leading-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white leading-tight">
             Explore Our Wide Range Of Medical Equipment Services
           </h2>
         </motion.div>
@@ -156,13 +156,15 @@ function Services() {
         viewport={{ once: true }}
         variants={fadeInUp}
       >
-        <motion.button 
-          whileHover={{ scale: 1.04 }}
-          whileTap={{ scale: 0.96 }}
-          className="bg-[#0a1045] hover:bg-[#009a97] text-white font-bold text-sm tracking-wider uppercase py-3.5 px-10 rounded-xl cursor-pointer transition-colors shadow-lg"
-        >
-          View All Services
-        </motion.button>
+        <a href="/services" className="inline-block">
+          <motion.button
+            whileHover={{ scale: 1.04 }}
+            whileTap={{ scale: 0.96 }}
+            className="bg-[#0a1045] hover:bg-[#009a97] text-white font-bold text-sm tracking-wide py-3.5 px-10 rounded-xl cursor-pointer transition-colors shadow-lg"
+          >
+            View All Services
+          </motion.button>
+        </a>
       </motion.div>
     </section>
   );

@@ -4,8 +4,6 @@ import Contact from "@/component/home/Contact";
 import CTA from "@/component/home/CTA";
 import Faq from "@/component/home/Faq";
 import Hero from "@/component/home/Hero";
-import Leadership from "@/component/home/Leadership";
-import Process from "@/component/home/Process";
 import Services from "@/component/home/Services";
 import Testimonials from "@/component/home/Testimonials";
 import WhyChooseUs from "@/component/home/WhyChooseUs";
@@ -26,8 +24,6 @@ export default function Home() {
       {/* service */}
       <Services />
 
-      {/* process */}
-      <Process />
 
       {/* why choose us */}
       <WhyChooseUs />
